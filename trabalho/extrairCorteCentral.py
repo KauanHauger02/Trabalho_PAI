@@ -3,10 +3,6 @@ import numpy as np
 import math
 
 class extrairCorteCentral:
-    
-    def __int__(self,corte):
-        
-        self.selecionarCorte(corte)
 
     def selecionarCorte(self, arquivo, corte):
      
@@ -27,7 +23,7 @@ class extrairCorteCentral:
         eixo = data.shape[0] # pega o eixo sagital
         eixo = eixo / 2 # pega a camada do meio do eixo sagital
         eixo = math.trunc(eixo) #trunca o numero para baixo em caso de numero impar 
-        return eixo
+        return data[eixo,:,:] #retorna a matriz 2D de dados naquele corte do eixo especificado
 
     def Coronal(self, img):
    
@@ -35,7 +31,7 @@ class extrairCorteCentral:
         eixo = data.shape[1]
         eixo = eixo / 2 
         eixo = math.trunc(eixo) 
-        return eixo
+        return data [:,eixo,:]
 
     def Axial(self, img):
    
@@ -43,6 +39,6 @@ class extrairCorteCentral:
         eixo = data.shape[2] 
         eixo = eixo / 2 
         eixo = math.trunc(eixo) 
-        return eixo
+        return data [:,:,eixo]
 
     

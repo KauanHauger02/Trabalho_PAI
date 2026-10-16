@@ -5,57 +5,26 @@ import nibabel as nib
 import os 
 import numpy as np
 import math
+from extrairCorteCentral import extrairCorteCentral
+from extrairTodosOsCortes import extrairTodosOsCortes
 
-path = os.path.join("C:/Users/Diego/Desktop/trabalho PAI/Base de dados/BreastDCEDL_ISPY1_min_crop/dce/ISPY1_1004_spy1_vis1_dce_aqc_0.nii")
-
+path = os.path.join("C:/Users/Diego/Desktop/trabalho PAI/Base de dados/BreastDCEDL_ISPY1_min_crop/dce/ISPY1_1001_spy1_vis1_dce_aqc_0.nii")
 
 img = nib.load(path)
 
 
-class extrairCorteCentral:
-    
-    def __int__(self,arquivo,corte):
-        
-        self.selecionarCorte(arquivo, corte)
-
-    def selecionarCorte(self, arquivo, corte):
-     
-        imagem = arquivo #recebe o arquivo com as imagens tridimensionais
-        img = nib.load(imagem)
-
-        if (corte == "sagital"):
-            return self.Sagital(img)
-        elif(corte == "coronal"):
-            return self.Coronal(img)
-        else:
-            return self.Axial(img)
-     
-    def Sagital(self, img):
-        #os eixos dos arquivos das imagens estão ordenados em nos eixos R A S => R = SAGITAL, A = CORONAL, S = AXIAL
-        
-        data = img.get_fdata() # data recebe um array em que os valores sao ordenados em [R, A, S]
-        eixo = data.shape[0] # pega o eixo sagital
-        eixo = eixo / 2 # pega a camada do meio do eixo sagital
-        eixo = math.trunc(eixo) #trunca o numero para baixo em caso de numero impar 
-        return eixo
-
-    def Coronal(self, img):
-   
-        data = img.get_fdata() 
-        eixo = data.shape[1]
-        eixo = eixo / 2 
-        eixo = math.trunc(eixo) 
-        return eixo
-
-    def Axial(self, img):
-   
-        data = img.get_fdata() 
-        eixo = data.shape[2] 
-        eixo = eixo / 2 
-        eixo = math.trunc(eixo) 
-        return eixo
-
     
 x = extrairCorteCentral()
 
-print(x.selecionarCorte(path, "axial"))
+#print(x.selecionarCorte(path, "axial"))
+
+y = extrairTodosOsCortes()
+#print(y.selecionarCorte(path, "axial"))
+
+
+resultado = y.selecionarCorte(path, "sagital")
+
+print("Quantidade de cortes:", len(resultado))
+print("Formato do primeiro corte:", resultado[0].shape)
+print("Dados do primeiro corte:", resultado[0])
+print("Dados do segundo corte:", resultado[2])
