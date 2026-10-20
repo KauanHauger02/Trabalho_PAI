@@ -7,7 +7,3 @@ class aumentoDeDados:
     
     def receberDados (self, folder): #recebe um arquivo de imagens 2D 
         self.arquivoImagens = folder #variavel arquivoImagens recebe o arquivo de imagens selecionado 
-
-        
-
-
