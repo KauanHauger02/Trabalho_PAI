@@ -11,20 +11,23 @@ from extrairTodosOsCortes import extrairTodosOsCortes
 path = os.path.join("C:/Users/Diego/Desktop/trabalho PAI/Base de dados/BreastDCEDL_ISPY1_min_crop/dce/ISPY1_1001_spy1_vis1_dce_aqc_0.nii")
 
 img = nib.load(path)
+print(img.shape)
+print(img.ndim)
 
+print(extrairCorteCentral(path, "sagital"))
 
-    
-x = extrairCorteCentral()
+fatia = extrairCorteCentral(path, "sagital")
 
-#print(x.selecionarCorte(path, "axial"))
+print(fatia.shape)
+print(fatia.ndim)
 
-y = extrairTodosOsCortes()
-#print(y.selecionarCorte(path, "axial"))
+# dir_path = os.path.join("C:/Users/Diego/Desktop/trabalho PAI/Base de dados/BreastDCEDL_ISPY1_min_crop/dce") #seleciona o arquivo com as imagens
+# files_in_dir = os.listdir(dir_path) #itera pelo arquivo pegando as imagens 
 
+# for file in files_in_dir:
+#     full_path = os.path.join(dir_path, file)
 
-resultado = y.selecionarCorte(path, "sagital")
-
-print("Quantidade de cortes:", len(resultado))
-print("Formato do primeiro corte:", resultado[0].shape)
-print("Dados do primeiro corte:", resultado[0])
-print("Dados do segundo corte:", resultado[2])
+#     img = nib.load(full_path)
+#     print(img.shape)
+#     print(img.ndim)
+#     print(img.get_data_dtype())
