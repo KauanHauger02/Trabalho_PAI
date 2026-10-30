@@ -1,0 +1,74 @@
+
+Carregando dados (estratégia: todos)...
+  lidos 43/172 pacientes
+  lidos 86/172 pacientes
+  lidos 129/172 pacientes
+  lidos 172/172 pacientes
+  4420 imagens de 172 pacientes
+
+=== cnn_1fase_todos | 105,953 parâmetros treináveis de 105,953 | mps ===
+    época  1: loss treino 1.0577 | loss validação 1.2828
+    época  2: loss treino 1.0528 | loss validação 1.2804
+    época  3: loss treino 1.0478 | loss validação 1.2456
+    época  4: loss treino 1.0461 | loss validação 1.2380
+    época  5: loss treino 1.0405 | loss validação 1.2877
+    época  6: loss treino 1.0299 | loss validação 1.3128
+    época  7: loss treino 1.0174 | loss validação 1.3329
+    época  8: loss treino 1.0058 | loss validação 1.3724
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes): sensibilidade 0.83, especificidade 0.26, precisao 0.37, acuracia 0.46, f1 0.51
+    teste (máximo dos cortes): sensibilidade 0.92, especificidade 0.09, precisao 0.34, acuracia 0.37, f1 0.50
+
+=== cnn_3fases_todos | 106,241 parâmetros treináveis de 106,241 | mps ===
+    época  1: loss treino 1.0274 | loss validação 1.3141
+    época  2: loss treino 0.9742 | loss validação 1.5106
+    época  3: loss treino 0.9385 | loss validação 1.3756
+    época  4: loss treino 0.9154 | loss validação 1.5354
+    época  5: loss treino 0.8738 | loss validação 1.5738
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes): sensibilidade 0.50, especificidade 0.39, precisao 0.30, acuracia 0.43, f1 0.37
+    teste (máximo dos cortes): sensibilidade 0.83, especificidade 0.26, precisao 0.37, acuracia 0.46, f1 0.51
+
+=== resnet50_1fase_todos | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    época  1: loss treino 1.0179 | loss validação 1.3268
+    época  2: loss treino 0.9120 | loss validação 1.3646
+    época  3: loss treino 0.8540 | loss validação 1.3013
+    época  4: loss treino 0.8233 | loss validação 1.4591
+    época  5: loss treino 0.8022 | loss validação 1.5056
+    época  6: loss treino 0.7695 | loss validação 1.4506
+    época  7: loss treino 0.7442 | loss validação 1.5467
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes): sensibilidade 0.83, especificidade 0.35, precisao 0.40, acuracia 0.51, f1 0.54
+    teste (máximo dos cortes): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+
+=== resnet50_3fases_todos | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    época  1: loss treino 1.0136 | loss validação 1.2684
+    época  2: loss treino 0.9054 | loss validação 1.3089
+    época  3: loss treino 0.8286 | loss validação 1.2820
+    época  4: loss treino 0.7808 | loss validação 1.4212
+    época  5: loss treino 0.7505 | loss validação 1.5044
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes): sensibilidade 0.58, especificidade 0.65, precisao 0.47, acuracia 0.63, f1 0.52
+    teste (máximo dos cortes): sensibilidade 0.92, especificidade 0.00, precisao 0.32, acuracia 0.31, f1 0.48
+
+=== vgg16_1fase_todos | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    época  1: loss treino 1.0381 | loss validação 1.2664
+    época  2: loss treino 0.9840 | loss validação 1.2835
+    época  3: loss treino 0.9423 | loss validação 1.4067
+    época  4: loss treino 0.8757 | loss validação 1.4172
+    época  5: loss treino 0.8284 | loss validação 1.3954
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes): sensibilidade 0.33, especificidade 0.87, precisao 0.57, acuracia 0.69, f1 0.42
+    teste (máximo dos cortes): sensibilidade 0.67, especificidade 0.48, precisao 0.40, acuracia 0.54, f1 0.50
+
+=== vgg16_3fases_todos | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    época  1: loss treino 1.0320 | loss validação 1.2907
+    época  2: loss treino 0.9568 | loss validação 1.3616
+    época  3: loss treino 0.9032 | loss validação 1.3683
+    época  4: loss treino 0.8260 | loss validação 1.5176
+    época  5: loss treino 0.7566 | loss validação 1.4501
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes): sensibilidade 0.17, especificidade 0.78, precisao 0.29, acuracia 0.57, f1 0.21
+    teste (máximo dos cortes): sensibilidade 0.67, especificidade 0.52, precisao 0.42, acuracia 0.57, f1 0.52
+
+Pronto. Métricas em /Users/nadao/Desktop/trabalho_PAI/Trabalho_PAI/resultados/metricas.csv, pesos em /Users/nadao/Desktop/trabalho_PAI/Trabalho_PAI/pesos

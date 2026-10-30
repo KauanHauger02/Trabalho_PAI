@@ -1,1 +1,6 @@
 Base de dados/
+# Ambiente virtual, pesos treinados e cache do Python
+.venv/
+pesos/
+__pycache__/
+*.pyc

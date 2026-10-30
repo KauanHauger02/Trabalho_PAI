@@ -1,0 +1,111 @@
+
+Carregando dados (estratégia: central)...
+  lidos 43/172 pacientes
+  lidos 86/172 pacientes
+  lidos 129/172 pacientes
+  lidos 172/172 pacientes
+  172 imagens de 172 pacientes
+
+=== cnn_1fase_central | 105,953 parâmetros treináveis de 105,953 | mps ===
+    época  1: loss treino 1.0659 | loss validação 1.1610
+    época  2: loss treino 1.0303 | loss validação 1.1605
+    época  3: loss treino 1.0332 | loss validação 1.1620
+    época  4: loss treino 1.0185 | loss validação 1.1649
+    época  5: loss treino 1.0419 | loss validação 1.1735
+    época  6: loss treino 1.0264 | loss validação 1.1948
+    época  7: loss treino 1.0466 | loss validação 1.2093
+    época  8: loss treino 1.0272 | loss validação 1.1896
+    época  9: loss treino 1.0369 | loss validação 1.1500
+    época 10: loss treino 1.0184 | loss validação 1.2724
+    época 11: loss treino 1.0100 | loss validação 1.2622
+    época 12: loss treino 0.9981 | loss validação 1.1817
+    época 13: loss treino 1.0121 | loss validação 1.1713
+    época 14: loss treino 1.0098 | loss validação 1.1343
+    época 15: loss treino 1.0077 | loss validação 1.2689
+    época 16: loss treino 0.9901 | loss validação 1.2954
+    época 17: loss treino 0.9591 | loss validação 1.2454
+    época 18: loss treino 0.9757 | loss validação 1.1654
+    época 19: loss treino 0.9830 | loss validação 1.3071
+    época 20: loss treino 0.9611 | loss validação 1.1981
+    época 21: loss treino 1.0109 | loss validação 1.2383
+    época 22: loss treino 0.9354 | loss validação 1.2487
+    early stopping: 8 épocas sem melhorar
+    teste (corte central): sensibilidade 0.58, especificidade 0.52, precisao 0.39, acuracia 0.54, f1 0.47
+
+=== cnn_3fases_central | 106,241 parâmetros treináveis de 106,241 | mps ===
+    época  1: loss treino 1.0907 | loss validação 1.1432
+    época  2: loss treino 1.0179 | loss validação 1.1355
+    época  3: loss treino 1.0528 | loss validação 1.1509
+    época  4: loss treino 1.0281 | loss validação 1.1631
+    época  5: loss treino 1.0180 | loss validação 1.1832
+    época  6: loss treino 1.0271 | loss validação 1.2075
+    época  7: loss treino 1.0158 | loss validação 1.2055
+    época  8: loss treino 1.0013 | loss validação 1.2080
+    época  9: loss treino 1.0043 | loss validação 1.2363
+    época 10: loss treino 1.0009 | loss validação 1.2337
+    early stopping: 8 épocas sem melhorar
+    teste (corte central): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+
+=== resnet50_1fase_central | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    época  1: loss treino 1.0469 | loss validação 1.1886
+    época  2: loss treino 1.0417 | loss validação 1.1700
+    época  3: loss treino 1.0160 | loss validação 1.1448
+    época  4: loss treino 0.9772 | loss validação 1.1562
+    época  5: loss treino 1.0166 | loss validação 1.1706
+    época  6: loss treino 0.9766 | loss validação 1.1721
+    época  7: loss treino 0.9588 | loss validação 1.1645
+    época  8: loss treino 0.9580 | loss validação 1.1774
+    época  9: loss treino 0.9150 | loss validação 1.1766
+    época 10: loss treino 0.9406 | loss validação 1.1970
+    época 11: loss treino 0.9404 | loss validação 1.1795
+    early stopping: 8 épocas sem melhorar
+    teste (corte central): sensibilidade 0.75, especificidade 0.30, precisao 0.36, acuracia 0.46, f1 0.49
+
+=== resnet50_3fases_central | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    época  1: loss treino 1.0490 | loss validação 1.1895
+    época  2: loss treino 1.0494 | loss validação 1.1729
+    época  3: loss treino 1.0370 | loss validação 1.1407
+    época  4: loss treino 0.9859 | loss validação 1.1408
+    época  5: loss treino 1.0029 | loss validação 1.1505
+    época  6: loss treino 0.9579 | loss validação 1.1640
+    época  7: loss treino 0.9816 | loss validação 1.1707
+    época  8: loss treino 0.9649 | loss validação 1.1781
+    época  9: loss treino 0.9466 | loss validação 1.1593
+    época 10: loss treino 0.9295 | loss validação 1.1683
+    época 11: loss treino 0.9407 | loss validação 1.1705
+    early stopping: 8 épocas sem melhorar
+    teste (corte central): sensibilidade 0.67, especificidade 0.39, precisao 0.36, acuracia 0.49, f1 0.47
+
+=== vgg16_1fase_central | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    época  1: loss treino 1.0463 | loss validação 1.1717
+    época  2: loss treino 1.0586 | loss validação 1.1744
+    época  3: loss treino 1.0825 | loss validação 1.1616
+    época  4: loss treino 1.0113 | loss validação 1.1395
+    época  5: loss treino 1.0262 | loss validação 1.1431
+    época  6: loss treino 1.0369 | loss validação 1.1788
+    época  7: loss treino 1.0082 | loss validação 1.1655
+    época  8: loss treino 1.0366 | loss validação 1.1540
+    época  9: loss treino 1.0163 | loss validação 1.1627
+    época 10: loss treino 1.0157 | loss validação 1.1538
+    época 11: loss treino 0.9877 | loss validação 1.1481
+    época 12: loss treino 1.0071 | loss validação 1.1615
+    early stopping: 8 épocas sem melhorar
+    teste (corte central): sensibilidade 0.92, especificidade 0.09, precisao 0.34, acuracia 0.37, f1 0.50
+
+=== vgg16_3fases_central | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    época  1: loss treino 1.0509 | loss validação 1.1580
+    época  2: loss treino 1.0551 | loss validação 1.1619
+    época  3: loss treino 1.0822 | loss validação 1.1664
+    época  4: loss treino 0.9999 | loss validação 1.1499
+    época  5: loss treino 1.0293 | loss validação 1.1508
+    época  6: loss treino 1.0454 | loss validação 1.1859
+    época  7: loss treino 1.0138 | loss validação 1.1627
+    época  8: loss treino 1.0363 | loss validação 1.1535
+    época  9: loss treino 1.0253 | loss validação 1.1674
+    época 10: loss treino 1.0116 | loss validação 1.1746
+    época 11: loss treino 0.9883 | loss validação 1.1555
+    época 12: loss treino 1.0090 | loss validação 1.1569
+    early stopping: 8 épocas sem melhorar
+    teste (corte central): sensibilidade 0.58, especificidade 0.35, precisao 0.32, acuracia 0.43, f1 0.41
+
+Pronto. Métricas em /Users/nadao/Desktop/trabalho_PAI/Trabalho_PAI/resultados/metricas.csv, pesos em /Users/nadao/Desktop/trabalho_PAI/Trabalho_PAI/pesos
