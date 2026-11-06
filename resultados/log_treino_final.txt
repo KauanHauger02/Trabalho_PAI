@@ -1,0 +1,242 @@
+
+Carregando dados (estratégia: central)...
+  lidos 43/172 pacientes
+  lidos 86/172 pacientes
+  lidos 129/172 pacientes
+  lidos 172/172 pacientes
+  172 imagens de 172 pacientes
+
+=== cnn_1fase_central  | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0663 | loss validação 1.1611
+    época  2: loss treino 1.0306 | loss validação 1.1602
+    época  3: loss treino 1.0361 | loss validação 1.1572
+    época  4: loss treino 1.0219 | loss validação 1.1582
+    época  5: loss treino 1.0448 | loss validação 1.1656
+    época  6: loss treino 1.0297 | loss validação 1.1660
+    época  7: loss treino 1.0487 | loss validação 1.1573
+    época  8: loss treino 1.0348 | loss validação 1.1495
+    época  9: loss treino 1.0343 | loss validação 1.1807
+    época 10: loss treino 1.0250 | loss validação 1.2109
+    época 11: loss treino 1.0294 | loss validação 1.1704
+    época 12: loss treino 1.0069 | loss validação 1.1267
+    época 13: loss treino 1.0187 | loss validação 1.2037
+    época 14: loss treino 1.0181 | loss validação 1.1622
+    época 15: loss treino 1.0251 | loss validação 1.2068
+    época 16: loss treino 0.9984 | loss validação 1.2592
+    época 17: loss treino 0.9773 | loss validação 1.1597
+    época 18: loss treino 1.0161 | loss validação 1.1132
+    época 19: loss treino 1.0045 | loss validação 1.2310
+    época 20: loss treino 1.0048 | loss validação 1.1843
+    época 21: loss treino 1.0164 | loss validação 1.1511
+    época 22: loss treino 0.9796 | loss validação 1.2018
+    época 23: loss treino 1.0056 | loss validação 1.2079
+    época 24: loss treino 1.0045 | loss validação 1.2571
+    época 25: loss treino 1.0131 | loss validação 1.1358
+    época 26: loss treino 1.0026 | loss validação 1.1922
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.17, precisao 0.32, acuracia 0.37, f1 0.45
+    teste (corte central, limiar 0.55): sensibilidade 0.33, especificidade 0.48, precisao 0.25, acuracia 0.43, f1 0.29
+
+=== cnn_3fases_central  | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0932 | loss validação 1.1434
+    época  2: loss treino 1.0205 | loss validação 1.1394
+    época  3: loss treino 1.0459 | loss validação 1.1409
+    época  4: loss treino 1.0328 | loss validação 1.1305
+    época  5: loss treino 1.0252 | loss validação 1.1461
+    época  6: loss treino 1.0379 | loss validação 1.1691
+    época  7: loss treino 1.0235 | loss validação 1.1611
+    época  8: loss treino 1.0105 | loss validação 1.1659
+    época  9: loss treino 1.0138 | loss validação 1.1775
+    época 10: loss treino 1.0085 | loss validação 1.1699
+    época 11: loss treino 0.9789 | loss validação 1.1909
+    época 12: loss treino 0.9852 | loss validação 1.1967
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.52, precisao 0.35, acuracia 0.51, f1 0.41
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.52, precisao 0.35, acuracia 0.51, f1 0.41
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== resnet50_1fase_central  | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0452 | loss validação 1.1883
+    época  2: loss treino 1.0357 | loss validação 1.1695
+    época  3: loss treino 1.0152 | loss validação 1.1445
+    época  4: loss treino 0.9776 | loss validação 1.1551
+    época  5: loss treino 1.0143 | loss validação 1.1691
+    época  6: loss treino 0.9723 | loss validação 1.1710
+    época  7: loss treino 0.9604 | loss validação 1.1642
+    época  8: loss treino 0.9578 | loss validação 1.1766
+    época  9: loss treino 0.9145 | loss validação 1.1752
+    época 10: loss treino 0.9422 | loss validação 1.1951
+    época 11: loss treino 0.9361 | loss validação 1.1782
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.30, precisao 0.36, acuracia 0.46, f1 0.49
+    teste (corte central, limiar 0.51): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== resnet50_3fases_central  | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0475 | loss validação 1.1897
+    época  2: loss treino 1.0473 | loss validação 1.1743
+    época  3: loss treino 1.0338 | loss validação 1.1431
+    época  4: loss treino 0.9845 | loss validação 1.1436
+    época  5: loss treino 1.0049 | loss validação 1.1537
+    época  6: loss treino 0.9539 | loss validação 1.1680
+    época  7: loss treino 0.9744 | loss validação 1.1770
+    época  8: loss treino 0.9668 | loss validação 1.1857
+    época  9: loss treino 0.9450 | loss validação 1.1662
+    época 10: loss treino 0.9281 | loss validação 1.1747
+    época 11: loss treino 0.9457 | loss validação 1.1765
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.48, precisao 0.40, acuracia 0.54, f1 0.50
+    teste (corte central, limiar 0.54): sensibilidade 0.42, especificidade 0.87, precisao 0.62, acuracia 0.71, f1 0.50
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== vgg16_1fase_central  | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0464 | loss validação 1.1695
+    época  2: loss treino 1.0554 | loss validação 1.1715
+    época  3: loss treino 1.0826 | loss validação 1.1598
+    época  4: loss treino 1.0076 | loss validação 1.1422
+    época  5: loss treino 1.0298 | loss validação 1.1455
+    época  6: loss treino 1.0358 | loss validação 1.1780
+    época  7: loss treino 1.0106 | loss validação 1.1621
+    época  8: loss treino 1.0378 | loss validação 1.1542
+    época  9: loss treino 1.0131 | loss validação 1.1628
+    época 10: loss treino 1.0202 | loss validação 1.1526
+    época 11: loss treino 0.9942 | loss validação 1.1476
+    época 12: loss treino 1.0082 | loss validação 1.1621
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.26, precisao 0.32, acuracia 0.40, f1 0.43
+    teste (corte central, limiar 0.51): sensibilidade 0.42, especificidade 0.65, precisao 0.38, acuracia 0.57, f1 0.40
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== vgg16_3fases_central  | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0506 | loss validação 1.1586
+    época  2: loss treino 1.0532 | loss validação 1.1667
+    época  3: loss treino 1.0801 | loss validação 1.1645
+    época  4: loss treino 0.9960 | loss validação 1.1452
+    época  5: loss treino 1.0309 | loss validação 1.1474
+    época  6: loss treino 1.0439 | loss validação 1.1816
+    época  7: loss treino 1.0164 | loss validação 1.1582
+    época  8: loss treino 1.0251 | loss validação 1.1542
+    época  9: loss treino 1.0229 | loss validação 1.1711
+    época 10: loss treino 1.0166 | loss validação 1.1755
+    época 11: loss treino 0.9896 | loss validação 1.1595
+    época 12: loss treino 1.0221 | loss validação 1.1578
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.83, especificidade 0.30, precisao 0.38, acuracia 0.49, f1 0.53
+    teste (corte central, limiar 0.52): sensibilidade 0.08, especificidade 0.78, precisao 0.17, acuracia 0.54, f1 0.11
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+Carregando dados (estratégia: todos)...
+  lidos 43/172 pacientes
+  lidos 86/172 pacientes
+  lidos 129/172 pacientes
+  lidos 172/172 pacientes
+  4420 imagens de 172 pacientes
+
+=== cnn_1fase_todos  | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0557 | loss validação 1.2452
+    época  2: loss treino 1.0528 | loss validação 1.2699
+    época  3: loss treino 1.0520 | loss validação 1.2370
+    época  4: loss treino 1.0529 | loss validação 1.2251
+    época  5: loss treino 1.0524 | loss validação 1.2477
+    época  6: loss treino 1.0522 | loss validação 1.2461
+    época  7: loss treino 1.0507 | loss validação 1.2393
+    época  8: loss treino 1.0520 | loss validação 1.2406
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (média dos cortes, limiar 0.51): sensibilidade 0.75, especificidade 0.09, precisao 0.30, acuracia 0.31, f1 0.43
+    teste (máximo dos cortes, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (máximo dos cortes, limiar 0.52): sensibilidade 0.25, especificidade 0.52, precisao 0.21, acuracia 0.43, f1 0.23
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== cnn_3fases_todos  | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0299 | loss validação 1.3561
+    época  2: loss treino 0.9886 | loss validação 1.3029
+    época  3: loss treino 0.9424 | loss validação 1.3683
+    época  4: loss treino 0.9178 | loss validação 2.0944
+    época  5: loss treino 0.9227 | loss validação 1.3516
+    época  6: loss treino 0.9006 | loss validação 1.9107
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes, limiar 0.50): sensibilidade 0.67, especificidade 0.39, precisao 0.36, acuracia 0.49, f1 0.47
+    teste (média dos cortes, limiar 0.46): sensibilidade 0.83, especificidade 0.30, precisao 0.38, acuracia 0.49, f1 0.53
+    teste (máximo dos cortes, limiar 0.50): sensibilidade 0.83, especificidade 0.22, precisao 0.36, acuracia 0.43, f1 0.50
+    teste (máximo dos cortes, limiar 0.52): sensibilidade 0.83, especificidade 0.26, precisao 0.37, acuracia 0.46, f1 0.51
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== resnet50_1fase_todos  | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0174 | loss validação 1.3227
+    época  2: loss treino 0.9150 | loss validação 1.3649
+    época  3: loss treino 0.8609 | loss validação 1.3071
+    época  4: loss treino 0.8322 | loss validação 1.4585
+    época  5: loss treino 0.8135 | loss validação 1.4987
+    época  6: loss treino 0.7867 | loss validação 1.4374
+    época  7: loss treino 0.7644 | loss validação 1.5319
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes, limiar 0.50): sensibilidade 0.83, especificidade 0.39, precisao 0.42, acuracia 0.54, f1 0.56
+    teste (média dos cortes, limiar 0.66): sensibilidade 0.25, especificidade 0.78, precisao 0.38, acuracia 0.60, f1 0.30
+    teste (máximo dos cortes, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (máximo dos cortes, limiar 0.80): sensibilidade 0.17, especificidade 0.74, precisao 0.25, acuracia 0.54, f1 0.20
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== resnet50_3fases_todos  | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0094 | loss validação 1.2860
+    época  2: loss treino 0.8984 | loss validação 1.3307
+    época  3: loss treino 0.8293 | loss validação 1.3128
+    época  4: loss treino 0.7853 | loss validação 1.4569
+    época  5: loss treino 0.7529 | loss validação 1.5353
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes, limiar 0.50): sensibilidade 0.67, especificidade 0.65, precisao 0.50, acuracia 0.66, f1 0.57
+    teste (média dos cortes, limiar 0.56): sensibilidade 0.17, especificidade 0.91, precisao 0.50, acuracia 0.66, f1 0.25
+    teste (máximo dos cortes, limiar 0.50): sensibilidade 0.92, especificidade 0.13, precisao 0.35, acuracia 0.40, f1 0.51
+    teste (máximo dos cortes, limiar 0.61): sensibilidade 0.42, especificidade 0.74, precisao 0.45, acuracia 0.63, f1 0.43
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== vgg16_1fase_todos  | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0376 | loss validação 1.2569
+    época  2: loss treino 0.9945 | loss validação 1.2773
+    época  3: loss treino 0.9679 | loss validação 1.3632
+    época  4: loss treino 0.9300 | loss validação 1.3538
+    época  5: loss treino 0.9049 | loss validação 1.3234
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes, limiar 0.50): sensibilidade 0.25, especificidade 0.83, precisao 0.43, acuracia 0.63, f1 0.32
+    teste (média dos cortes, limiar 0.49): sensibilidade 0.33, especificidade 0.78, precisao 0.44, acuracia 0.63, f1 0.38
+    teste (máximo dos cortes, limiar 0.50): sensibilidade 0.83, especificidade 0.48, precisao 0.45, acuracia 0.60, f1 0.59
+    teste (máximo dos cortes, limiar 0.50): sensibilidade 0.83, especificidade 0.48, precisao 0.45, acuracia 0.60, f1 0.59
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+=== vgg16_3fases_todos  | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0380 | loss validação 1.2591
+    época  2: loss treino 0.9865 | loss validação 1.3027
+    época  3: loss treino 0.9484 | loss validação 1.3261
+    época  4: loss treino 0.9079 | loss validação 1.3818
+    época  5: loss treino 0.8723 | loss validação 1.3253
+    early stopping: 4 épocas sem melhorar
+    teste (média dos cortes, limiar 0.50): sensibilidade 0.17, especificidade 0.74, precisao 0.25, acuracia 0.54, f1 0.20
+    teste (média dos cortes, limiar 0.49): sensibilidade 0.42, especificidade 0.65, precisao 0.38, acuracia 0.57, f1 0.40
+    teste (máximo dos cortes, limiar 0.50): sensibilidade 0.83, especificidade 0.39, precisao 0.42, acuracia 0.54, f1 0.56
+    teste (máximo dos cortes, limiar 0.54): sensibilidade 0.25, especificidade 0.78, precisao 0.38, acuracia 0.60, f1 0.30
+/Users/tulio/Downloads/TrabPAI/repo/trabalho_pai.py:887: Pandas4Warning: 'str' is not supported as a fill value for float64 dtype. In a future version, calling fillna with an incompatible value will raise. Explicitly cast to a common dtype before filling.
+  repetida &= antigas[coluna].fillna("").astype(str) == str(linhas[0][coluna])
+
+Pronto. Métricas em /Users/tulio/Downloads/TrabPAI/repo/resultados/metricas.csv, pesos em /Users/tulio/Downloads/TrabPAI/repo/pesos

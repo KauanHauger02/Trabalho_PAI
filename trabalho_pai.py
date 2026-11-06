@@ -100,10 +100,11 @@ ESTRATEGIAS = ["central", "todos"]
 ANGULOS = [-20, -10, 0, 10, 20]
 VARIACOES = [(angulo, espelhar) for angulo in ANGULOS for espelhar in (False, True)]
 
-# Hiperparâmetros do treino final. Os valores saíram do ajuste da Etapa 8 (justificativas no relatório).
+# Hiperparâmetros do treino final: são os da tentativa T5 do ajuste da Etapa 8, a de menor loss de
+# validação (justificativas no relatório).
 HIPERPARAMETROS = {
     "taxa_aprendizado": 1e-3,
-    "decaimento_pesos": 1e-4,
+    "decaimento_pesos": 1e-2,
     "dropout": 0.5,
     "tamanho_lote": 16,
     "semente": 42,
@@ -112,17 +113,19 @@ LIMIAR_PADRAO = 0.5
 EPOCAS = {"central": 40, "todos": 15}     # máximo de épocas
 PACIENCIA = {"central": 8, "todos": 4}    # early stopping: épocas sem melhorar a loss de validação
 
-# Tentativas do ajuste de hiperparâmetros: cada uma diz o que muda em relação a HIPERPARAMETROS.
+# Ajuste de hiperparâmetros. O ponto de partida são os valores da primeira rodada do grupo (30/10)
+# e cada tentativa diz o que muda em relação a ele.
+BASE_DO_AJUSTE = {"taxa_aprendizado": 1e-3, "decaimento_pesos": 1e-4, "dropout": 0.5, "tamanho_lote": 16}
 TENTATIVAS = {
     # 1ª etapa: taxa de aprendizado
-    "T1": {"taxa_aprendizado": 1e-3},   # valores da primeira rodada do grupo
+    "T1": {},                              # o próprio ponto de partida
     "T2": {"taxa_aprendizado": 3e-4},
     "T3": {"taxa_aprendizado": 1e-4},
     "T4": {"taxa_aprendizado": 1e-5},
-    # 2ª etapa: regularização e tamanho do lote, com a taxa de aprendizado de T1
-    "T5": {"taxa_aprendizado": 1e-3, "decaimento_pesos": 1e-2},
-    "T6": {"taxa_aprendizado": 1e-3, "dropout": 0.7},
-    "T7": {"taxa_aprendizado": 1e-3, "tamanho_lote": 32},
+    # 2ª etapa: regularização e tamanho do lote, com a taxa de aprendizado de T1 (a melhor da 1ª etapa)
+    "T5": {"decaimento_pesos": 1e-2},
+    "T6": {"dropout": 0.7},
+    "T7": {"tamanho_lote": 32},
 }
 SEMENTES_AJUSTE = [42, 43, 44]            # cada tentativa roda com 3 sementes, para medir o ruído
 
@@ -744,12 +747,12 @@ def salvar_figura_gradcam(imagem, mascara, probabilidade, mapa, rotulo, titulo, 
     canal = imagem[-1] if imagem.shape[0] == 1 else imagem[1]  # mostra o pós-contraste precoce
     figura, eixos = plt.subplots(1, 3, figsize=(9, 3.2))
     eixos[0].imshow(canal, cmap="gray")
-    eixos[0].set_title("pós-contraste precoce")
+    eixos[0].set_title("pós-contraste precoce", fontsize=10)
     eixos[0].axis("off")
     desenhar_gradcam(eixos[1], canal, mapa, mascara)
-    eixos[1].set_title(f"Grad-CAM | P(pCR) = {probabilidade:.2f}")
+    eixos[1].set_title(f"Grad-CAM | P(pCR) = {probabilidade:.2f}", fontsize=10)
     eixos[2].imshow(mascara, cmap="gray")
-    eixos[2].set_title(f"máscara do tumor | pCR real = {int(rotulo)}")
+    eixos[2].set_title(f"máscara do tumor | pCR real = {int(rotulo)}", fontsize=10)
     eixos[2].axis("off")
     figura.suptitle(titulo, fontsize=10)
     plt.tight_layout()
@@ -1022,8 +1025,9 @@ def ajustar_hiperparametros(redes, regimes):
         for semente in SEMENTES_AJUSTE:
             for nome_rede in redes:
                 for regime in regimes:
-                    linhas, _, historico, _ = executar_experimento(
-                        nome_rede, regime, "central", dados, {**mudancas, "semente": semente}, tentativa)
+                    hiper = {**BASE_DO_AJUSTE, **mudancas, "semente": semente}
+                    linhas, _, historico, _ = executar_experimento(nome_rede, regime, "central", dados, hiper,
+                                                                   tentativa)
                     salvar_metricas(linhas, CAMINHO_AJUSTE)
                     historicos.setdefault((nome_rede, regime, tentativa), historico)  # guarda a 1ª semente
 
@@ -1398,11 +1402,12 @@ class InterfaceMRI:
 
         canais = REGIMES[regime]
         corte = visualizador.corte_atual
-        probabilidade, mapa = gerar_gradcam(modelo, torch.from_numpy(fases[:, corte][canais]))
+        prob_do_corte, mapa = gerar_gradcam(modelo, torch.from_numpy(fases[:, corte][canais]))
         linhas = [f"{self.menu_rede.get()} | {self.menu_regime.get()} | {self.menu_estrategia.get()}",
-                  f"Corte {corte}: P(pCR) = {probabilidade:.2f}"]
+                  f"Corte {corte}: P(pCR) = {prob_do_corte:.3f}"]
 
         if estrategia == "central":
+            probabilidade = prob_do_corte
             limiar = limiares.get("corte central", LIMIAR_PADRAO)
         else:
             # Probabilidade do paciente: média das previsões de todos os cortes com tumor.
@@ -1415,16 +1420,17 @@ class InterfaceMRI:
                                     batch_size=HIPERPARAMETROS["tamanho_lote"])
             probabilidade = float(prever(modelo, carregador).mean())
             limiar = limiares.get("média dos cortes", LIMIAR_PADRAO)
-            linhas.append(f"Paciente (média de {len(cortes)} cortes): P(pCR) = {probabilidade:.2f}")
+            linhas.append(f"Paciente (média de {len(cortes)} cortes): P(pCR) = {probabilidade:.3f}")
 
+        # Três casas decimais: as probabilidades ficam perto do limiar e duas casas pareceriam empate.
         previsto = int(probabilidade >= limiar)
-        linhas.append(f"Limiar {limiar:.2f}  ->  classe prevista: pCR {'PRESENTE' if previsto else 'AUSENTE'}")
+        linhas.append(f"Limiar {limiar:.3f}  ->  classe prevista: pCR {'PRESENTE' if previsto else 'AUSENTE'}")
         real = self.rotulo_real(exame)
         if real is not None:
             linhas.append(f"Classe real na planilha: pCR {'presente' if real else 'ausente'} "
                           f"({'acerto' if real == previsto else 'erro'})")
 
-        visualizador.mostrar_gradcam(mapa, f"Grad-CAM | P(pCR) = {probabilidade:.2f}")
+        visualizador.mostrar_gradcam(mapa, f"Grad-CAM do corte {corte} | P(pCR) = {prob_do_corte:.3f}")
         self.mostrar_resultado("\n".join(linhas))
 
     # ----- b) aumento de dados e desbalanceamento -----

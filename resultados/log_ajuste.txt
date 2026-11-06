@@ -1,0 +1,2732 @@
+  lidos 43/172 pacientes
+  lidos 86/172 pacientes
+  lidos 129/172 pacientes
+  lidos 172/172 pacientes
+
+=== cnn_1fase_central T1 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0665 | loss validação 1.1609
+    época  2: loss treino 1.0301 | loss validação 1.1604
+    época  3: loss treino 1.0356 | loss validação 1.1614
+    época  4: loss treino 1.0197 | loss validação 1.1636
+    época  5: loss treino 1.0400 | loss validação 1.1686
+    época  6: loss treino 1.0279 | loss validação 1.1871
+    época  7: loss treino 1.0475 | loss validação 1.1878
+    época  8: loss treino 1.0261 | loss validação 1.1718
+    época  9: loss treino 1.0379 | loss validação 1.1692
+    época 10: loss treino 1.0277 | loss validação 1.2295
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.70, precisao 0.36, acuracia 0.57, f1 0.35
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 0.87, precisao 0.00, acuracia 0.57, f1 0.00
+
+=== cnn_3fases_central T1 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0931 | loss validação 1.1439
+    época  2: loss treino 1.0205 | loss validação 1.1409
+    época  3: loss treino 1.0486 | loss validação 1.1454
+    época  4: loss treino 1.0329 | loss validação 1.1458
+    época  5: loss treino 1.0237 | loss validação 1.1656
+    época  6: loss treino 1.0339 | loss validação 1.2042
+    época  7: loss treino 1.0242 | loss validação 1.2030
+    época  8: loss treino 1.0055 | loss validação 1.1862
+    época  9: loss treino 1.0171 | loss validação 1.1977
+    época 10: loss treino 0.9963 | loss validação 1.2069
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.52): sensibilidade 0.67, especificidade 0.48, precisao 0.40, acuracia 0.54, f1 0.50
+
+=== resnet50_1fase_central T1 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0453 | loss validação 1.1883
+    época  2: loss treino 1.0359 | loss validação 1.1695
+    época  3: loss treino 1.0152 | loss validação 1.1444
+    época  4: loss treino 0.9775 | loss validação 1.1551
+    época  5: loss treino 1.0142 | loss validação 1.1690
+    época  6: loss treino 0.9723 | loss validação 1.1710
+    época  7: loss treino 0.9604 | loss validação 1.1641
+    época  8: loss treino 0.9574 | loss validação 1.1765
+    época  9: loss treino 0.9141 | loss validação 1.1751
+    época 10: loss treino 0.9416 | loss validação 1.1951
+    época 11: loss treino 0.9357 | loss validação 1.1782
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.30, precisao 0.36, acuracia 0.46, f1 0.49
+    teste (corte central, limiar 0.51): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+
+=== resnet50_3fases_central T1 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0475 | loss validação 1.1898
+    época  2: loss treino 1.0473 | loss validação 1.1744
+    época  3: loss treino 1.0339 | loss validação 1.1431
+    época  4: loss treino 0.9844 | loss validação 1.1436
+    época  5: loss treino 1.0048 | loss validação 1.1537
+    época  6: loss treino 0.9537 | loss validação 1.1680
+    época  7: loss treino 0.9743 | loss validação 1.1770
+    época  8: loss treino 0.9666 | loss validação 1.1858
+    época  9: loss treino 0.9446 | loss validação 1.1663
+    época 10: loss treino 0.9275 | loss validação 1.1748
+    época 11: loss treino 0.9455 | loss validação 1.1767
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.48, precisao 0.40, acuracia 0.54, f1 0.50
+    teste (corte central, limiar 0.54): sensibilidade 0.42, especificidade 0.87, precisao 0.62, acuracia 0.71, f1 0.50
+
+=== vgg16_1fase_central T1 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0465 | loss validação 1.1707
+    época  2: loss treino 1.0571 | loss validação 1.1737
+    época  3: loss treino 1.0830 | loss validação 1.1624
+    época  4: loss treino 1.0078 | loss validação 1.1406
+    época  5: loss treino 1.0305 | loss validação 1.1422
+    época  6: loss treino 1.0351 | loss validação 1.1755
+    época  7: loss treino 1.0085 | loss validação 1.1638
+    época  8: loss treino 1.0388 | loss validação 1.1533
+    época  9: loss treino 1.0143 | loss validação 1.1619
+    época 10: loss treino 1.0116 | loss validação 1.1477
+    época 11: loss treino 0.9899 | loss validação 1.1459
+    época 12: loss treino 1.0005 | loss validação 1.1606
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.83, especificidade 0.26, precisao 0.37, acuracia 0.46, f1 0.51
+    teste (corte central, limiar 0.51): sensibilidade 0.25, especificidade 0.74, precisao 0.33, acuracia 0.57, f1 0.29
+
+=== vgg16_3fases_central T1 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0515 | loss validação 1.1589
+    época  2: loss treino 1.0529 | loss validação 1.1658
+    época  3: loss treino 1.0838 | loss validação 1.1664
+    época  4: loss treino 0.9972 | loss validação 1.1473
+    época  5: loss treino 1.0261 | loss validação 1.1516
+    época  6: loss treino 1.0479 | loss validação 1.1916
+    época  7: loss treino 1.0041 | loss validação 1.1594
+    época  8: loss treino 1.0409 | loss validação 1.1506
+    época  9: loss treino 1.0269 | loss validação 1.1685
+    época 10: loss treino 1.0122 | loss validação 1.1733
+    época 11: loss treino 0.9856 | loss validação 1.1563
+    época 12: loss treino 1.0129 | loss validação 1.1573
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.35, precisao 0.38, acuracia 0.49, f1 0.50
+    teste (corte central, limiar 0.52): sensibilidade 0.08, especificidade 0.78, precisao 0.17, acuracia 0.54, f1 0.11
+
+=== cnn_1fase_central T1 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0537 | loss validação 1.1697
+    época  2: loss treino 1.0556 | loss validação 1.1739
+    época  3: loss treino 1.0469 | loss validação 1.1667
+    época  4: loss treino 1.0277 | loss validação 1.1737
+    época  5: loss treino 1.0395 | loss validação 1.1621
+    época  6: loss treino 1.0267 | loss validação 1.1706
+    época  7: loss treino 1.0220 | loss validação 1.2143
+    época  8: loss treino 1.0313 | loss validação 1.2023
+    época  9: loss treino 1.0211 | loss validação 1.1550
+    época 10: loss treino 1.0334 | loss validação 1.1550
+    época 11: loss treino 1.0418 | loss validação 1.2353
+    época 12: loss treino 1.0169 | loss validação 1.2054
+    época 13: loss treino 1.0133 | loss validação 1.1891
+    época 14: loss treino 0.9958 | loss validação 1.1838
+    época 15: loss treino 1.0165 | loss validação 1.1448
+    época 16: loss treino 1.0170 | loss validação 1.2349
+    época 17: loss treino 1.0336 | loss validação 1.2146
+    época 18: loss treino 1.0039 | loss validação 1.1856
+    época 19: loss treino 0.9809 | loss validação 1.1834
+    época 20: loss treino 1.0109 | loss validação 1.2237
+    época 21: loss treino 0.9897 | loss validação 1.1131
+    época 22: loss treino 0.9953 | loss validação 1.1735
+    época 23: loss treino 0.9957 | loss validação 1.2253
+    época 24: loss treino 1.0138 | loss validação 1.2344
+    época 25: loss treino 1.0268 | loss validação 1.1764
+    época 26: loss treino 1.0035 | loss validação 1.2900
+    época 27: loss treino 1.0066 | loss validação 1.2420
+    época 28: loss treino 0.9831 | loss validação 1.3370
+    época 29: loss treino 0.9764 | loss validação 1.2339
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.48, precisao 0.37, acuracia 0.51, f1 0.45
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.48, precisao 0.37, acuracia 0.51, f1 0.45
+
+=== cnn_3fases_central T1 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0910 | loss validação 1.1648
+    época  2: loss treino 1.0403 | loss validação 1.1994
+    época  3: loss treino 1.0209 | loss validação 1.2308
+    época  4: loss treino 1.0278 | loss validação 1.2656
+    época  5: loss treino 1.0436 | loss validação 1.2355
+    época  6: loss treino 1.0275 | loss validação 1.2232
+    época  7: loss treino 1.0062 | loss validação 1.2500
+    época  8: loss treino 1.0153 | loss validação 1.2843
+    época  9: loss treino 0.9898 | loss validação 1.2269
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.70, precisao 0.36, acuracia 0.57, f1 0.35
+    teste (corte central, limiar 0.51): sensibilidade 0.00, especificidade 0.87, precisao 0.00, acuracia 0.57, f1 0.00
+
+=== resnet50_1fase_central T1 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0346 | loss validação 1.2139
+    época  2: loss treino 1.0271 | loss validação 1.1818
+    época  3: loss treino 1.0461 | loss validação 1.1581
+    época  4: loss treino 1.0218 | loss validação 1.1884
+    época  5: loss treino 0.9723 | loss validação 1.1746
+    época  6: loss treino 0.9802 | loss validação 1.1618
+    época  7: loss treino 0.9558 | loss validação 1.1722
+    época  8: loss treino 0.9528 | loss validação 1.1796
+    época  9: loss treino 0.9731 | loss validação 1.2048
+    época 10: loss treino 0.9040 | loss validação 1.2113
+    época 11: loss treino 0.8896 | loss validação 1.2023
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.35, precisao 0.32, acuracia 0.43, f1 0.41
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.35, precisao 0.32, acuracia 0.43, f1 0.41
+
+=== resnet50_3fases_central T1 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0482 | loss validação 1.1958
+    época  2: loss treino 1.0278 | loss validação 1.1695
+    época  3: loss treino 1.0607 | loss validação 1.1475
+    época  4: loss treino 1.0050 | loss validação 1.1695
+    época  5: loss treino 0.9935 | loss validação 1.1620
+    época  6: loss treino 0.9847 | loss validação 1.1596
+    época  7: loss treino 0.9666 | loss validação 1.1704
+    época  8: loss treino 0.9714 | loss validação 1.1726
+    época  9: loss treino 0.9687 | loss validação 1.1965
+    época 10: loss treino 0.9358 | loss validação 1.2077
+    época 11: loss treino 0.9026 | loss validação 1.2047
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.53): sensibilidade 0.33, especificidade 0.70, precisao 0.36, acuracia 0.57, f1 0.35
+
+=== vgg16_1fase_central T1 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0362 | loss validação 1.1691
+    época  2: loss treino 1.0329 | loss validação 1.1796
+    época  3: loss treino 1.0318 | loss validação 1.1849
+    época  4: loss treino 1.0366 | loss validação 1.1439
+    época  5: loss treino 1.0556 | loss validação 1.1287
+    época  6: loss treino 1.0304 | loss validação 1.1300
+    época  7: loss treino 1.0359 | loss validação 1.1428
+    época  8: loss treino 1.0096 | loss validação 1.1688
+    época  9: loss treino 1.0421 | loss validação 1.1692
+    época 10: loss treino 1.0156 | loss validação 1.1709
+    época 11: loss treino 0.9988 | loss validação 1.1376
+    época 12: loss treino 1.0137 | loss validação 1.1271
+    época 13: loss treino 0.9900 | loss validação 1.1333
+    época 14: loss treino 0.9960 | loss validação 1.1598
+    época 15: loss treino 0.9852 | loss validação 1.1645
+    época 16: loss treino 0.9839 | loss validação 1.1702
+    época 17: loss treino 0.9612 | loss validação 1.1523
+    época 18: loss treino 0.9682 | loss validação 1.1784
+    época 19: loss treino 0.9507 | loss validação 1.1687
+    época 20: loss treino 0.9663 | loss validação 1.1566
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.52): sensibilidade 1.00, especificidade 0.26, precisao 0.41, acuracia 0.51, f1 0.59
+
+=== vgg16_3fases_central T1 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0275 | loss validação 1.1829
+    época  2: loss treino 1.0289 | loss validação 1.1776
+    época  3: loss treino 1.0187 | loss validação 1.1749
+    época  4: loss treino 1.0206 | loss validação 1.1518
+    época  5: loss treino 1.0567 | loss validação 1.1488
+    época  6: loss treino 1.0172 | loss validação 1.1598
+    época  7: loss treino 1.0525 | loss validação 1.1693
+    época  8: loss treino 1.0013 | loss validação 1.1840
+    época  9: loss treino 1.0410 | loss validação 1.1688
+    época 10: loss treino 1.0224 | loss validação 1.1727
+    época 11: loss treino 0.9981 | loss validação 1.1473
+    época 12: loss treino 1.0034 | loss validação 1.1372
+    época 13: loss treino 0.9785 | loss validação 1.1428
+    época 14: loss treino 0.9789 | loss validação 1.1623
+    época 15: loss treino 0.9929 | loss validação 1.1664
+    época 16: loss treino 0.9633 | loss validação 1.1753
+    época 17: loss treino 0.9608 | loss validação 1.1664
+    época 18: loss treino 0.9665 | loss validação 1.1944
+    época 19: loss treino 0.9356 | loss validação 1.1611
+    época 20: loss treino 0.9823 | loss validação 1.1561
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.17, precisao 0.39, acuracia 0.46, f1 0.56
+    teste (corte central, limiar 0.51): sensibilidade 1.00, especificidade 0.17, precisao 0.39, acuracia 0.46, f1 0.56
+
+=== cnn_1fase_central T1 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0755 | loss validação 1.1442
+    época  2: loss treino 1.0507 | loss validação 1.1466
+    época  3: loss treino 1.0455 | loss validação 1.1637
+    época  4: loss treino 1.0359 | loss validação 1.1656
+    época  5: loss treino 1.0386 | loss validação 1.1650
+    época  6: loss treino 1.0243 | loss validação 1.2033
+    época  7: loss treino 1.0370 | loss validação 1.1812
+    época  8: loss treino 1.0342 | loss validação 1.2143
+    época  9: loss treino 1.0277 | loss validação 1.2390
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.52): sensibilidade 0.92, especificidade 0.22, precisao 0.38, acuracia 0.46, f1 0.54
+
+=== cnn_3fases_central T1 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0592 | loss validação 1.1510
+    época  2: loss treino 1.0255 | loss validação 1.1928
+    época  3: loss treino 1.0544 | loss validação 1.2492
+    época  4: loss treino 1.0236 | loss validação 1.1757
+    época  5: loss treino 1.0055 | loss validação 1.1419
+    época  6: loss treino 1.0060 | loss validação 1.1702
+    época  7: loss treino 0.9632 | loss validação 1.1411
+    época  8: loss treino 0.9852 | loss validação 1.2465
+    época  9: loss treino 0.9711 | loss validação 1.2814
+    época 10: loss treino 0.8915 | loss validação 1.4072
+    época 11: loss treino 0.9659 | loss validação 1.2977
+    época 12: loss treino 0.8954 | loss validação 1.2800
+    época 13: loss treino 0.9198 | loss validação 1.4112
+    época 14: loss treino 0.9107 | loss validação 1.3093
+    época 15: loss treino 0.8974 | loss validação 1.5345
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.17, precisao 0.27, acuracia 0.31, f1 0.37
+    teste (corte central, limiar 0.52): sensibilidade 0.58, especificidade 0.43, precisao 0.35, acuracia 0.49, f1 0.44
+
+=== resnet50_1fase_central T1 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0509 | loss validação 1.2032
+    época  2: loss treino 1.0552 | loss validação 1.1848
+    época  3: loss treino 1.0408 | loss validação 1.1638
+    época  4: loss treino 0.9814 | loss validação 1.1739
+    época  5: loss treino 1.0033 | loss validação 1.1967
+    época  6: loss treino 0.9504 | loss validação 1.1988
+    época  7: loss treino 0.9526 | loss validação 1.1924
+    época  8: loss treino 0.9166 | loss validação 1.1988
+    época  9: loss treino 0.9482 | loss validação 1.1903
+    época 10: loss treino 0.9160 | loss validação 1.1878
+    época 11: loss treino 0.9048 | loss validação 1.1837
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.65, precisao 0.43, acuracia 0.60, f1 0.46
+    teste (corte central, limiar 0.51): sensibilidade 0.42, especificidade 0.74, precisao 0.45, acuracia 0.63, f1 0.43
+
+=== resnet50_3fases_central T1 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0524 | loss validação 1.1609
+    época  2: loss treino 1.0500 | loss validação 1.1595
+    época  3: loss treino 1.0458 | loss validação 1.1399
+    época  4: loss treino 0.9762 | loss validação 1.1402
+    época  5: loss treino 1.0147 | loss validação 1.1521
+    época  6: loss treino 0.9590 | loss validação 1.1503
+    época  7: loss treino 0.9622 | loss validação 1.1456
+    época  8: loss treino 0.9614 | loss validação 1.1515
+    época  9: loss treino 0.9471 | loss validação 1.1513
+    época 10: loss treino 0.9268 | loss validação 1.1541
+    época 11: loss treino 0.9322 | loss validação 1.1532
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.52, precisao 0.39, acuracia 0.54, f1 0.47
+    teste (corte central, limiar 0.54): sensibilidade 0.17, especificidade 0.96, precisao 0.67, acuracia 0.69, f1 0.27
+
+=== vgg16_1fase_central T1 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0664 | loss validação 1.1852
+    época  2: loss treino 1.0596 | loss validação 1.1489
+    época  3: loss treino 1.0318 | loss validação 1.1395
+    época  4: loss treino 1.0447 | loss validação 1.1498
+    época  5: loss treino 1.0200 | loss validação 1.1493
+    época  6: loss treino 1.0272 | loss validação 1.1526
+    época  7: loss treino 1.0057 | loss validação 1.1720
+    época  8: loss treino 1.0212 | loss validação 1.1637
+    época  9: loss treino 0.9985 | loss validação 1.1359
+    época 10: loss treino 1.0234 | loss validação 1.1471
+    época 11: loss treino 0.9857 | loss validação 1.1877
+    época 12: loss treino 0.9953 | loss validação 1.1970
+    época 13: loss treino 0.9919 | loss validação 1.1438
+    época 14: loss treino 0.9838 | loss validação 1.1273
+    época 15: loss treino 0.9621 | loss validação 1.1496
+    época 16: loss treino 0.9320 | loss validação 1.1526
+    época 17: loss treino 0.9431 | loss validação 1.1490
+    época 18: loss treino 0.9857 | loss validação 1.1420
+    época 19: loss treino 0.9598 | loss validação 1.1263
+    época 20: loss treino 0.9017 | loss validação 1.1511
+    época 21: loss treino 0.9139 | loss validação 1.1605
+    época 22: loss treino 0.9192 | loss validação 1.1083
+    época 23: loss treino 0.8864 | loss validação 1.1661
+    época 24: loss treino 0.9011 | loss validação 1.1716
+    época 25: loss treino 0.8862 | loss validação 1.1888
+    época 26: loss treino 0.9074 | loss validação 1.1722
+    época 27: loss treino 0.8492 | loss validação 1.1737
+    época 28: loss treino 0.8532 | loss validação 1.1737
+    época 29: loss treino 0.8517 | loss validação 1.1347
+    época 30: loss treino 0.8281 | loss validação 1.1516
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.64): sensibilidade 0.17, especificidade 0.91, precisao 0.50, acuracia 0.66, f1 0.25
+
+=== vgg16_3fases_central T1 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0735 | loss validação 1.1974
+    época  2: loss treino 1.0629 | loss validação 1.1541
+    época  3: loss treino 1.0277 | loss validação 1.1414
+    época  4: loss treino 1.0433 | loss validação 1.1489
+    época  5: loss treino 1.0348 | loss validação 1.1457
+    época  6: loss treino 1.0227 | loss validação 1.1500
+    época  7: loss treino 1.0278 | loss validação 1.1620
+    época  8: loss treino 1.0195 | loss validação 1.1623
+    época  9: loss treino 1.0139 | loss validação 1.1429
+    época 10: loss treino 1.0392 | loss validação 1.1523
+    época 11: loss treino 1.0028 | loss validação 1.1644
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.51): sensibilidade 0.83, especificidade 0.43, precisao 0.43, acuracia 0.57, f1 0.57
+
+##### tentativa T1 concluída em 582s acumulados #####
+
+=== cnn_1fase_central T2 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0670 | loss validação 1.1686
+    época  2: loss treino 1.0402 | loss validação 1.1655
+    época  3: loss treino 1.0319 | loss validação 1.1667
+    época  4: loss treino 1.0197 | loss validação 1.1673
+    época  5: loss treino 1.0403 | loss validação 1.1659
+    época  6: loss treino 1.0308 | loss validação 1.1699
+    época  7: loss treino 1.0347 | loss validação 1.1818
+    época  8: loss treino 1.0359 | loss validação 1.1860
+    época  9: loss treino 1.0215 | loss validação 1.1879
+    época 10: loss treino 1.0144 | loss validação 1.1864
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 1.00, precisao 0.00, acuracia 0.66, f1 0.00
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 1.00, precisao 0.00, acuracia 0.66, f1 0.00
+
+=== cnn_3fases_central T2 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0811 | loss validação 1.1473
+    época  2: loss treino 1.0284 | loss validação 1.1442
+    época  3: loss treino 1.0515 | loss validação 1.1438
+    época  4: loss treino 1.0296 | loss validação 1.1459
+    época  5: loss treino 1.0099 | loss validação 1.1549
+    época  6: loss treino 1.0159 | loss validação 1.1590
+    época  7: loss treino 1.0182 | loss validação 1.1712
+    época  8: loss treino 0.9949 | loss validação 1.1712
+    época  9: loss treino 0.9826 | loss validação 1.1792
+    época 10: loss treino 0.9945 | loss validação 1.1935
+    época 11: loss treino 0.9519 | loss validação 1.1827
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.51): sensibilidade 0.75, especificidade 0.17, precisao 0.32, acuracia 0.37, f1 0.45
+
+=== resnet50_1fase_central T2 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0437 | loss validação 1.1730
+    época  2: loss treino 1.0467 | loss validação 1.1762
+    época  3: loss treino 1.0412 | loss validação 1.1715
+    época  4: loss treino 1.0123 | loss validação 1.1728
+    época  5: loss treino 1.0478 | loss validação 1.1737
+    época  6: loss treino 1.0303 | loss validação 1.1722
+    época  7: loss treino 1.0219 | loss validação 1.1680
+    época  8: loss treino 1.0233 | loss validação 1.1688
+    época  9: loss treino 0.9953 | loss validação 1.1673
+    época 10: loss treino 1.0304 | loss validação 1.1722
+    época 11: loss treino 1.0256 | loss validação 1.1700
+    época 12: loss treino 1.0172 | loss validação 1.1603
+    época 13: loss treino 0.9822 | loss validação 1.1613
+    época 14: loss treino 0.9799 | loss validação 1.1654
+    época 15: loss treino 0.9987 | loss validação 1.1725
+    época 16: loss treino 0.9694 | loss validação 1.1725
+    época 17: loss treino 1.0018 | loss validação 1.1726
+    época 18: loss treino 0.9737 | loss validação 1.1648
+    época 19: loss treino 0.9815 | loss validação 1.1608
+    época 20: loss treino 0.9730 | loss validação 1.1635
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+    teste (corte central, limiar 0.48): sensibilidade 0.92, especificidade 0.22, precisao 0.38, acuracia 0.46, f1 0.54
+
+=== resnet50_3fases_central T2 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0466 | loss validação 1.1721
+    época  2: loss treino 1.0532 | loss validação 1.1758
+    época  3: loss treino 1.0528 | loss validação 1.1696
+    época  4: loss treino 1.0272 | loss validação 1.1676
+    época  5: loss treino 1.0448 | loss validação 1.1663
+    época  6: loss treino 1.0176 | loss validação 1.1666
+    época  7: loss treino 1.0233 | loss validação 1.1667
+    época  8: loss treino 1.0243 | loss validação 1.1687
+    época  9: loss treino 1.0045 | loss validação 1.1644
+    época 10: loss treino 1.0179 | loss validação 1.1667
+    época 11: loss treino 1.0337 | loss validação 1.1654
+    época 12: loss treino 1.0043 | loss validação 1.1600
+    época 13: loss treino 0.9814 | loss validação 1.1607
+    época 14: loss treino 0.9985 | loss validação 1.1606
+    época 15: loss treino 0.9990 | loss validação 1.1659
+    época 16: loss treino 0.9832 | loss validação 1.1655
+    época 17: loss treino 0.9955 | loss validação 1.1663
+    época 18: loss treino 0.9841 | loss validação 1.1603
+    época 19: loss treino 0.9836 | loss validação 1.1560
+    época 20: loss treino 0.9619 | loss validação 1.1573
+    época 21: loss treino 0.9837 | loss validação 1.1618
+    época 22: loss treino 0.9628 | loss validação 1.1679
+    época 23: loss treino 0.9952 | loss validação 1.1718
+    época 24: loss treino 0.9455 | loss validação 1.1730
+    época 25: loss treino 0.9606 | loss validação 1.1731
+    época 26: loss treino 0.9275 | loss validação 1.1704
+    época 27: loss treino 0.9569 | loss validação 1.1662
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.57, precisao 0.44, acuracia 0.60, f1 0.53
+    teste (corte central, limiar 0.54): sensibilidade 0.25, especificidade 0.96, precisao 0.75, acuracia 0.71, f1 0.38
+
+=== vgg16_1fase_central T2 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0496 | loss validação 1.1809
+    época  2: loss treino 1.0473 | loss validação 1.1752
+    época  3: loss treino 1.0557 | loss validação 1.1705
+    época  4: loss treino 1.0251 | loss validação 1.1605
+    época  5: loss treino 1.0316 | loss validação 1.1573
+    época  6: loss treino 1.0332 | loss validação 1.1656
+    época  7: loss treino 1.0195 | loss validação 1.1568
+    época  8: loss treino 1.0337 | loss validação 1.1547
+    época  9: loss treino 1.0299 | loss validação 1.1608
+    época 10: loss treino 1.0364 | loss validação 1.1605
+    época 11: loss treino 1.0119 | loss validação 1.1543
+    época 12: loss treino 1.0273 | loss validação 1.1537
+    época 13: loss treino 1.0220 | loss validação 1.1662
+    época 14: loss treino 1.0260 | loss validação 1.1811
+    época 15: loss treino 1.0211 | loss validação 1.1782
+    época 16: loss treino 1.0046 | loss validação 1.1674
+    época 17: loss treino 1.0082 | loss validação 1.1541
+    época 18: loss treino 0.9994 | loss validação 1.1525
+    época 19: loss treino 1.0037 | loss validação 1.1578
+    época 20: loss treino 1.0004 | loss validação 1.1578
+    época 21: loss treino 0.9876 | loss validação 1.1618
+    época 22: loss treino 0.9986 | loss validação 1.1534
+    época 23: loss treino 0.9911 | loss validação 1.1613
+    época 24: loss treino 0.9724 | loss validação 1.1621
+    época 25: loss treino 0.9780 | loss validação 1.1567
+    época 26: loss treino 0.9779 | loss validação 1.1561
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.42, especificidade 0.65, precisao 0.38, acuracia 0.57, f1 0.40
+    teste (corte central, limiar 0.47): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+
+=== vgg16_3fases_central T2 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0507 | loss validação 1.1707
+    época  2: loss treino 1.0543 | loss validação 1.1630
+    época  3: loss treino 1.0578 | loss validação 1.1601
+    época  4: loss treino 1.0175 | loss validação 1.1534
+    época  5: loss treino 1.0383 | loss validação 1.1493
+    época  6: loss treino 1.0432 | loss validação 1.1563
+    época  7: loss treino 1.0366 | loss validação 1.1504
+    época  8: loss treino 1.0455 | loss validação 1.1480
+    época  9: loss treino 1.0292 | loss validação 1.1529
+    época 10: loss treino 1.0271 | loss validação 1.1560
+    época 11: loss treino 1.0125 | loss validação 1.1547
+    época 12: loss treino 1.0266 | loss validação 1.1552
+    época 13: loss treino 1.0286 | loss validação 1.1636
+    época 14: loss treino 1.0281 | loss validação 1.1722
+    época 15: loss treino 1.0392 | loss validação 1.1708
+    época 16: loss treino 1.0090 | loss validação 1.1676
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.42, especificidade 0.48, precisao 0.29, acuracia 0.46, f1 0.34
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.57, precisao 0.29, acuracia 0.49, f1 0.31
+
+=== cnn_1fase_central T2 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0411 | loss validação 1.1656
+    época  2: loss treino 1.0655 | loss validação 1.1519
+    época  3: loss treino 1.0453 | loss validação 1.1409
+    época  4: loss treino 1.0283 | loss validação 1.1409
+    época  5: loss treino 1.0420 | loss validação 1.1426
+    época  6: loss treino 1.0261 | loss validação 1.1480
+    época  7: loss treino 1.0267 | loss validação 1.1606
+    época  8: loss treino 1.0177 | loss validação 1.1683
+    época  9: loss treino 1.0159 | loss validação 1.1683
+    época 10: loss treino 1.0423 | loss validação 1.1558
+    época 11: loss treino 1.0437 | loss validação 1.1684
+    época 12: loss treino 1.0151 | loss validação 1.1505
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.92, especificidade 0.09, precisao 0.34, acuracia 0.37, f1 0.50
+    teste (corte central, limiar 0.52): sensibilidade 0.50, especificidade 0.48, precisao 0.33, acuracia 0.49, f1 0.40
+
+=== cnn_3fases_central T2 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0782 | loss validação 1.1461
+    época  2: loss treino 1.0369 | loss validação 1.1537
+    época  3: loss treino 1.0033 | loss validação 1.1730
+    época  4: loss treino 1.0244 | loss validação 1.2040
+    época  5: loss treino 1.0484 | loss validação 1.2111
+    época  6: loss treino 1.0392 | loss validação 1.2161
+    época  7: loss treino 1.0053 | loss validação 1.2310
+    época  8: loss treino 1.0098 | loss validação 1.2347
+    época  9: loss treino 1.0108 | loss validação 1.2251
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.52): sensibilidade 0.00, especificidade 1.00, precisao 0.00, acuracia 0.66, f1 0.00
+
+=== resnet50_1fase_central T2 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0255 | loss validação 1.1917
+    época  2: loss treino 1.0366 | loss validação 1.1904
+    época  3: loss treino 1.0668 | loss validação 1.1834
+    época  4: loss treino 1.0478 | loss validação 1.1907
+    época  5: loss treino 1.0130 | loss validação 1.1845
+    época  6: loss treino 1.0295 | loss validação 1.1780
+    época  7: loss treino 1.0124 | loss validação 1.1779
+    época  8: loss treino 1.0131 | loss validação 1.1765
+    época  9: loss treino 1.0386 | loss validação 1.1826
+    época 10: loss treino 0.9886 | loss validação 1.1876
+    época 11: loss treino 0.9803 | loss validação 1.1910
+    época 12: loss treino 0.9772 | loss validação 1.1908
+    época 13: loss treino 0.9967 | loss validação 1.1875
+    época 14: loss treino 1.0346 | loss validação 1.1877
+    época 15: loss treino 1.0185 | loss validação 1.1865
+    época 16: loss treino 0.9826 | loss validação 1.1808
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.78, precisao 0.44, acuracia 0.63, f1 0.38
+    teste (corte central, limiar 0.48): sensibilidade 0.58, especificidade 0.43, precisao 0.35, acuracia 0.49, f1 0.44
+
+=== resnet50_3fases_central T2 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0384 | loss validação 1.1828
+    época  2: loss treino 1.0363 | loss validação 1.1787
+    época  3: loss treino 1.0745 | loss validação 1.1692
+    época  4: loss treino 1.0235 | loss validação 1.1728
+    época  5: loss treino 1.0251 | loss validação 1.1666
+    época  6: loss treino 1.0238 | loss validação 1.1621
+    época  7: loss treino 1.0183 | loss validação 1.1627
+    época  8: loss treino 1.0205 | loss validação 1.1613
+    época  9: loss treino 1.0330 | loss validação 1.1673
+    época 10: loss treino 1.0010 | loss validação 1.1723
+    época 11: loss treino 0.9904 | loss validação 1.1759
+    época 12: loss treino 0.9985 | loss validação 1.1771
+    época 13: loss treino 1.0114 | loss validação 1.1748
+    época 14: loss treino 0.9951 | loss validação 1.1773
+    época 15: loss treino 0.9987 | loss validação 1.1779
+    época 16: loss treino 0.9884 | loss validação 1.1740
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+    teste (corte central, limiar 0.52): sensibilidade 0.25, especificidade 0.87, precisao 0.50, acuracia 0.66, f1 0.33
+
+=== vgg16_1fase_central T2 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0401 | loss validação 1.1477
+    época  2: loss treino 1.0407 | loss validação 1.1533
+    época  3: loss treino 1.0356 | loss validação 1.1630
+    época  4: loss treino 1.0417 | loss validação 1.1591
+    época  5: loss treino 1.0516 | loss validação 1.1549
+    época  6: loss treino 1.0230 | loss validação 1.1515
+    época  7: loss treino 1.0341 | loss validação 1.1507
+    época  8: loss treino 1.0301 | loss validação 1.1571
+    época  9: loss treino 1.0409 | loss validação 1.1553
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.09, precisao 0.36, acuracia 0.40, f1 0.53
+    teste (corte central, limiar 0.52): sensibilidade 0.33, especificidade 0.65, precisao 0.33, acuracia 0.54, f1 0.33
+
+=== vgg16_3fases_central T2 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0352 | loss validação 1.1541
+    época  2: loss treino 1.0280 | loss validação 1.1606
+    época  3: loss treino 1.0270 | loss validação 1.1678
+    época  4: loss treino 1.0304 | loss validação 1.1641
+    época  5: loss treino 1.0492 | loss validação 1.1595
+    época  6: loss treino 1.0194 | loss validação 1.1558
+    época  7: loss treino 1.0473 | loss validação 1.1553
+    época  8: loss treino 1.0302 | loss validação 1.1587
+    época  9: loss treino 1.0356 | loss validação 1.1594
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.51): sensibilidade 0.92, especificidade 0.13, precisao 0.35, acuracia 0.40, f1 0.51
+
+=== cnn_1fase_central T2 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0733 | loss validação 1.1364
+    época  2: loss treino 1.0441 | loss validação 1.1382
+    época  3: loss treino 1.0391 | loss validação 1.1493
+    época  4: loss treino 1.0218 | loss validação 1.1573
+    época  5: loss treino 1.0392 | loss validação 1.1564
+    época  6: loss treino 1.0279 | loss validação 1.1764
+    época  7: loss treino 1.0265 | loss validação 1.1971
+    época  8: loss treino 1.0222 | loss validação 1.1971
+    época  9: loss treino 1.0254 | loss validação 1.1724
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.54): sensibilidade 0.33, especificidade 0.74, precisao 0.40, acuracia 0.60, f1 0.36
+
+=== cnn_3fases_central T2 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0559 | loss validação 1.1560
+    época  2: loss treino 1.0284 | loss validação 1.1639
+    época  3: loss treino 1.0494 | loss validação 1.1873
+    época  4: loss treino 1.0281 | loss validação 1.1868
+    época  5: loss treino 1.0131 | loss validação 1.1621
+    época  6: loss treino 1.0091 | loss validação 1.1680
+    época  7: loss treino 0.9881 | loss validação 1.1478
+    época  8: loss treino 0.9900 | loss validação 1.1552
+    época  9: loss treino 0.9917 | loss validação 1.1903
+    época 10: loss treino 0.9315 | loss validação 1.1702
+    época 11: loss treino 0.9711 | loss validação 1.1398
+    época 12: loss treino 0.9248 | loss validação 1.2376
+    época 13: loss treino 0.9467 | loss validação 1.3505
+    época 14: loss treino 0.9385 | loss validação 1.2141
+    época 15: loss treino 0.8901 | loss validação 1.3238
+    época 16: loss treino 0.9277 | loss validação 1.3380
+    época 17: loss treino 0.9156 | loss validação 1.2404
+    época 18: loss treino 0.9154 | loss validação 1.2437
+    época 19: loss treino 0.9185 | loss validação 1.3962
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.17, precisao 0.32, acuracia 0.37, f1 0.45
+    teste (corte central, limiar 0.57): sensibilidade 0.33, especificidade 0.61, precisao 0.31, acuracia 0.51, f1 0.32
+
+=== resnet50_1fase_central T2 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0446 | loss validação 1.1958
+    época  2: loss treino 1.0665 | loss validação 1.1904
+    época  3: loss treino 1.0576 | loss validação 1.1808
+    época  4: loss treino 1.0203 | loss validação 1.1790
+    época  5: loss treino 1.0356 | loss validação 1.1833
+    época  6: loss treino 1.0073 | loss validação 1.1852
+    época  7: loss treino 1.0127 | loss validação 1.1865
+    época  8: loss treino 0.9909 | loss validação 1.1904
+    época  9: loss treino 1.0218 | loss validação 1.1890
+    época 10: loss treino 1.0093 | loss validação 1.1886
+    época 11: loss treino 0.9990 | loss validação 1.1870
+    época 12: loss treino 1.0161 | loss validação 1.1813
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.25, especificidade 0.74, precisao 0.33, acuracia 0.57, f1 0.29
+    teste (corte central, limiar 0.50): sensibilidade 0.25, especificidade 0.74, precisao 0.33, acuracia 0.57, f1 0.29
+
+=== resnet50_3fases_central T2 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0493 | loss validação 1.1597
+    época  2: loss treino 1.0599 | loss validação 1.1588
+    época  3: loss treino 1.0626 | loss validação 1.1520
+    época  4: loss treino 1.0094 | loss validação 1.1498
+    época  5: loss treino 1.0463 | loss validação 1.1514
+    época  6: loss treino 1.0032 | loss validação 1.1508
+    época  7: loss treino 1.0279 | loss validação 1.1500
+    época  8: loss treino 1.0263 | loss validação 1.1521
+    época  9: loss treino 1.0121 | loss validação 1.1523
+    época 10: loss treino 1.0127 | loss validação 1.1534
+    época 11: loss treino 1.0119 | loss validação 1.1534
+    época 12: loss treino 1.0213 | loss validação 1.1515
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.65, precisao 0.47, acuracia 0.63, f1 0.52
+    teste (corte central, limiar 0.51): sensibilidade 0.33, especificidade 0.78, precisao 0.44, acuracia 0.63, f1 0.38
+
+=== vgg16_1fase_central T2 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0479 | loss validação 1.1601
+    época  2: loss treino 1.0489 | loss validação 1.1596
+    época  3: loss treino 1.0320 | loss validação 1.1547
+    época  4: loss treino 1.0442 | loss validação 1.1554
+    época  5: loss treino 1.0325 | loss validação 1.1529
+    época  6: loss treino 1.0307 | loss validação 1.1516
+    época  7: loss treino 1.0271 | loss validação 1.1573
+    época  8: loss treino 1.0322 | loss validação 1.1600
+    época  9: loss treino 1.0155 | loss validação 1.1536
+    época 10: loss treino 1.0302 | loss validação 1.1573
+    época 11: loss treino 1.0124 | loss validação 1.1646
+    época 12: loss treino 1.0209 | loss validação 1.1713
+    época 13: loss treino 1.0319 | loss validação 1.1653
+    época 14: loss treino 1.0113 | loss validação 1.1565
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.57, precisao 0.44, acuracia 0.60, f1 0.53
+    teste (corte central, limiar 0.48): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+
+=== vgg16_3fases_central T2 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0003, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0551 | loss validação 1.1707
+    época  2: loss treino 1.0568 | loss validação 1.1661
+    época  3: loss treino 1.0352 | loss validação 1.1595
+    época  4: loss treino 1.0360 | loss validação 1.1577
+    época  5: loss treino 1.0349 | loss validação 1.1540
+    época  6: loss treino 1.0253 | loss validação 1.1524
+    época  7: loss treino 1.0326 | loss validação 1.1575
+    época  8: loss treino 1.0383 | loss validação 1.1606
+    época  9: loss treino 1.0223 | loss validação 1.1546
+    época 10: loss treino 1.0289 | loss validação 1.1544
+    época 11: loss treino 1.0159 | loss validação 1.1590
+    época 12: loss treino 1.0262 | loss validação 1.1664
+    época 13: loss treino 1.0253 | loss validação 1.1658
+    época 14: loss treino 1.0164 | loss validação 1.1608
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.39, precisao 0.33, acuracia 0.46, f1 0.42
+    teste (corte central, limiar 0.50): sensibilidade 0.83, especificidade 0.22, precisao 0.36, acuracia 0.43, f1 0.50
+
+##### tentativa T2 concluída em 1187s acumulados #####
+
+=== cnn_1fase_central T3 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0622 | loss validação 1.1725
+    época  2: loss treino 1.0507 | loss validação 1.1700
+    época  3: loss treino 1.0381 | loss validação 1.1706
+    época  4: loss treino 1.0283 | loss validação 1.1750
+    época  5: loss treino 1.0541 | loss validação 1.1759
+    época  6: loss treino 1.0386 | loss validação 1.1779
+    época  7: loss treino 1.0405 | loss validação 1.1760
+    época  8: loss treino 1.0454 | loss validação 1.1771
+    época  9: loss treino 1.0322 | loss validação 1.1763
+    época 10: loss treino 1.0263 | loss validação 1.1738
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 1.00, precisao 0.00, acuracia 0.66, f1 0.00
+    teste (corte central, limiar 0.48): sensibilidade 1.00, especificidade 0.09, precisao 0.36, acuracia 0.40, f1 0.53
+
+=== cnn_3fases_central T3 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0731 | loss validação 1.1472
+    época  2: loss treino 1.0376 | loss validação 1.1456
+    época  3: loss treino 1.0553 | loss validação 1.1452
+    época  4: loss treino 1.0473 | loss validação 1.1454
+    época  5: loss treino 1.0205 | loss validação 1.1469
+    época  6: loss treino 1.0293 | loss validação 1.1481
+    época  7: loss treino 1.0226 | loss validação 1.1500
+    época  8: loss treino 1.0175 | loss validação 1.1500
+    época  9: loss treino 1.0089 | loss validação 1.1535
+    época 10: loss treino 1.0153 | loss validação 1.1584
+    época 11: loss treino 0.9933 | loss validação 1.1586
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.52): sensibilidade 0.92, especificidade 0.17, precisao 0.37, acuracia 0.43, f1 0.52
+
+=== resnet50_1fase_central T3 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0440 | loss validação 1.1651
+    época  2: loss treino 1.0492 | loss validação 1.1673
+    época  3: loss treino 1.0478 | loss validação 1.1673
+    época  4: loss treino 1.0230 | loss validação 1.1689
+    época  5: loss treino 1.0576 | loss validação 1.1702
+    época  6: loss treino 1.0485 | loss validação 1.1706
+    época  7: loss treino 1.0428 | loss validação 1.1698
+    época  8: loss treino 1.0459 | loss validação 1.1701
+    época  9: loss treino 1.0226 | loss validação 1.1696
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.42, especificidade 0.43, precisao 0.28, acuracia 0.43, f1 0.33
+    teste (corte central, limiar 0.49): sensibilidade 0.58, especificidade 0.35, precisao 0.32, acuracia 0.43, f1 0.41
+
+=== resnet50_3fases_central T3 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0470 | loss validação 1.1648
+    época  2: loss treino 1.0542 | loss validação 1.1669
+    época  3: loss treino 1.0571 | loss validação 1.1662
+    época  4: loss treino 1.0396 | loss validação 1.1666
+    época  5: loss treino 1.0569 | loss validação 1.1669
+    época  6: loss treino 1.0381 | loss validação 1.1675
+    época  7: loss treino 1.0394 | loss validação 1.1677
+    época  8: loss treino 1.0442 | loss validação 1.1685
+    época  9: loss treino 1.0250 | loss validação 1.1672
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.65, precisao 0.33, acuracia 0.54, f1 0.33
+    teste (corte central, limiar 0.51): sensibilidade 0.25, especificidade 0.96, precisao 0.75, acuracia 0.71, f1 0.38
+
+=== vgg16_1fase_central T3 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0479 | loss validação 1.1768
+    época  2: loss treino 1.0468 | loss validação 1.1759
+    época  3: loss treino 1.0565 | loss validação 1.1753
+    época  4: loss treino 1.0310 | loss validação 1.1709
+    época  5: loss treino 1.0432 | loss validação 1.1670
+    época  6: loss treino 1.0395 | loss validação 1.1674
+    época  7: loss treino 1.0292 | loss validação 1.1631
+    época  8: loss treino 1.0419 | loss validação 1.1609
+    época  9: loss treino 1.0387 | loss validação 1.1612
+    época 10: loss treino 1.0419 | loss validação 1.1598
+    época 11: loss treino 1.0231 | loss validação 1.1572
+    época 12: loss treino 1.0334 | loss validação 1.1558
+    época 13: loss treino 1.0338 | loss validação 1.1592
+    época 14: loss treino 1.0378 | loss validação 1.1634
+    época 15: loss treino 1.0383 | loss validação 1.1651
+    época 16: loss treino 1.0276 | loss validação 1.1644
+    época 17: loss treino 1.0280 | loss validação 1.1623
+    época 18: loss treino 1.0299 | loss validação 1.1613
+    época 19: loss treino 1.0314 | loss validação 1.1610
+    época 20: loss treino 1.0237 | loss validação 1.1594
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.17, especificidade 0.91, precisao 0.50, acuracia 0.66, f1 0.25
+    teste (corte central, limiar 0.50): sensibilidade 0.17, especificidade 0.83, precisao 0.33, acuracia 0.60, f1 0.22
+
+=== vgg16_3fases_central T3 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0510 | loss validação 1.1718
+    época  2: loss treino 1.0546 | loss validação 1.1692
+    época  3: loss treino 1.0537 | loss validação 1.1690
+    época  4: loss treino 1.0333 | loss validação 1.1658
+    época  5: loss treino 1.0487 | loss validação 1.1622
+    época  6: loss treino 1.0507 | loss validação 1.1627
+    época  7: loss treino 1.0445 | loss validação 1.1594
+    época  8: loss treino 1.0511 | loss validação 1.1570
+    época  9: loss treino 1.0400 | loss validação 1.1568
+    época 10: loss treino 1.0404 | loss validação 1.1559
+    época 11: loss treino 1.0312 | loss validação 1.1539
+    época 12: loss treino 1.0360 | loss validação 1.1531
+    época 13: loss treino 1.0393 | loss validação 1.1556
+    época 14: loss treino 1.0406 | loss validação 1.1598
+    época 15: loss treino 1.0451 | loss validação 1.1618
+    época 16: loss treino 1.0277 | loss validação 1.1619
+    época 17: loss treino 1.0294 | loss validação 1.1604
+    época 18: loss treino 1.0344 | loss validação 1.1607
+    época 19: loss treino 1.0324 | loss validação 1.1625
+    época 20: loss treino 1.0260 | loss validação 1.1606
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.08, especificidade 0.87, precisao 0.25, acuracia 0.60, f1 0.12
+    teste (corte central, limiar 0.49): sensibilidade 0.50, especificidade 0.74, precisao 0.50, acuracia 0.66, f1 0.50
+
+=== cnn_1fase_central T3 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0424 | loss validação 1.1700
+    época  2: loss treino 1.0691 | loss validação 1.1594
+    época  3: loss treino 1.0478 | loss validação 1.1462
+    época  4: loss treino 1.0354 | loss validação 1.1397
+    época  5: loss treino 1.0450 | loss validação 1.1370
+    época  6: loss treino 1.0264 | loss validação 1.1383
+    época  7: loss treino 1.0428 | loss validação 1.1430
+    época  8: loss treino 1.0352 | loss validação 1.1457
+    época  9: loss treino 1.0279 | loss validação 1.1487
+    época 10: loss treino 1.0452 | loss validação 1.1486
+    época 11: loss treino 1.0483 | loss validação 1.1521
+    época 12: loss treino 1.0214 | loss validação 1.1491
+    época 13: loss treino 1.0334 | loss validação 1.1491
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.52): sensibilidade 0.33, especificidade 0.65, precisao 0.33, acuracia 0.54, f1 0.33
+
+=== cnn_3fases_central T3 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0737 | loss validação 1.1457
+    época  2: loss treino 1.0394 | loss validação 1.1457
+    época  3: loss treino 1.0119 | loss validação 1.1538
+    época  4: loss treino 1.0331 | loss validação 1.1685
+    época  5: loss treino 1.0520 | loss validação 1.1810
+    época  6: loss treino 1.0478 | loss validação 1.1893
+    época  7: loss treino 1.0109 | loss validação 1.1918
+    época  8: loss treino 1.0261 | loss validação 1.1938
+    época  9: loss treino 1.0323 | loss validação 1.1900
+    época 10: loss treino 1.0163 | loss validação 1.1820
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.52): sensibilidade 0.08, especificidade 1.00, precisao 1.00, acuracia 0.69, f1 0.15
+
+=== resnet50_1fase_central T3 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0235 | loss validação 1.1833
+    época  2: loss treino 1.0399 | loss validação 1.1840
+    época  3: loss treino 1.0738 | loss validação 1.1827
+    época  4: loss treino 1.0574 | loss validação 1.1857
+    época  5: loss treino 1.0258 | loss validação 1.1844
+    época  6: loss treino 1.0454 | loss validação 1.1826
+    época  7: loss treino 1.0315 | loss validação 1.1826
+    época  8: loss treino 1.0321 | loss validação 1.1817
+    época  9: loss treino 1.0617 | loss validação 1.1834
+    época 10: loss treino 1.0178 | loss validação 1.1848
+    época 11: loss treino 1.0124 | loss validação 1.1860
+    época 12: loss treino 1.0097 | loss validação 1.1863
+    época 13: loss treino 1.0392 | loss validação 1.1858
+    época 14: loss treino 1.0673 | loss validação 1.1864
+    época 15: loss treino 1.0565 | loss validação 1.1865
+    época 16: loss treino 1.0240 | loss validação 1.1851
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.17, especificidade 0.78, precisao 0.29, acuracia 0.57, f1 0.21
+    teste (corte central, limiar 0.48): sensibilidade 0.58, especificidade 0.48, precisao 0.37, acuracia 0.51, f1 0.45
+
+=== resnet50_3fases_central T3 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0358 | loss validação 1.1777
+    época  2: loss treino 1.0387 | loss validação 1.1769
+    época  3: loss treino 1.0789 | loss validação 1.1740
+    época  4: loss treino 1.0310 | loss validação 1.1751
+    época  5: loss treino 1.0356 | loss validação 1.1727
+    época  6: loss treino 1.0368 | loss validação 1.1705
+    época  7: loss treino 1.0348 | loss validação 1.1699
+    época  8: loss treino 1.0364 | loss validação 1.1684
+    época  9: loss treino 1.0538 | loss validação 1.1697
+    época 10: loss treino 1.0230 | loss validação 1.1706
+    época 11: loss treino 1.0202 | loss validação 1.1714
+    época 12: loss treino 1.0222 | loss validação 1.1718
+    época 13: loss treino 1.0465 | loss validação 1.1712
+    época 14: loss treino 1.0326 | loss validação 1.1721
+    época 15: loss treino 1.0381 | loss validação 1.1725
+    época 16: loss treino 1.0277 | loss validação 1.1714
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.42, especificidade 0.48, precisao 0.29, acuracia 0.46, f1 0.34
+    teste (corte central, limiar 0.51): sensibilidade 0.25, especificidade 0.70, precisao 0.30, acuracia 0.54, f1 0.27
+
+=== vgg16_1fase_central T3 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0406 | loss validação 1.1421
+    época  2: loss treino 1.0448 | loss validação 1.1453
+    época  3: loss treino 1.0427 | loss validação 1.1496
+    época  4: loss treino 1.0483 | loss validação 1.1492
+    época  5: loss treino 1.0527 | loss validação 1.1492
+    época  6: loss treino 1.0303 | loss validação 1.1494
+    época  7: loss treino 1.0398 | loss validação 1.1503
+    época  8: loss treino 1.0447 | loss validação 1.1526
+    época  9: loss treino 1.0395 | loss validação 1.1523
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.52): sensibilidade 0.67, especificidade 0.43, precisao 0.38, acuracia 0.51, f1 0.48
+
+=== vgg16_3fases_central T3 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0384 | loss validação 1.1459
+    época  2: loss treino 1.0358 | loss validação 1.1492
+    época  3: loss treino 1.0342 | loss validação 1.1535
+    época  4: loss treino 1.0358 | loss validação 1.1550
+    época  5: loss treino 1.0465 | loss validação 1.1561
+    época  6: loss treino 1.0286 | loss validação 1.1565
+    época  7: loss treino 1.0471 | loss validação 1.1578
+    época  8: loss treino 1.0466 | loss validação 1.1595
+    época  9: loss treino 1.0338 | loss validação 1.1591
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.56): sensibilidade 0.00, especificidade 0.96, precisao 0.00, acuracia 0.63, f1 0.00
+
+=== cnn_1fase_central T3 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0685 | loss validação 1.1352
+    época  2: loss treino 1.0464 | loss validação 1.1348
+    época  3: loss treino 1.0469 | loss validação 1.1370
+    época  4: loss treino 1.0317 | loss validação 1.1424
+    época  5: loss treino 1.0547 | loss validação 1.1476
+    época  6: loss treino 1.0384 | loss validação 1.1572
+    época  7: loss treino 1.0421 | loss validação 1.1631
+    época  8: loss treino 1.0364 | loss validação 1.1692
+    época  9: loss treino 1.0340 | loss validação 1.1691
+    época 10: loss treino 1.0289 | loss validação 1.1710
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.54): sensibilidade 0.83, especificidade 0.13, precisao 0.33, acuracia 0.37, f1 0.48
+
+=== cnn_3fases_central T3 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0560 | loss validação 1.1533
+    época  2: loss treino 1.0330 | loss validação 1.1537
+    época  3: loss treino 1.0485 | loss validação 1.1585
+    época  4: loss treino 1.0367 | loss validação 1.1657
+    época  5: loss treino 1.0283 | loss validação 1.1678
+    época  6: loss treino 1.0125 | loss validação 1.1807
+    época  7: loss treino 1.0198 | loss validação 1.1855
+    época  8: loss treino 1.0130 | loss validação 1.1884
+    época  9: loss treino 1.0294 | loss validação 1.1929
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+
+=== resnet50_1fase_central T3 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0430 | loss validação 1.1945
+    época  2: loss treino 1.0700 | loss validação 1.1926
+    época  3: loss treino 1.0631 | loss validação 1.1889
+    época  4: loss treino 1.0319 | loss validação 1.1875
+    época  5: loss treino 1.0458 | loss validação 1.1882
+    época  6: loss treino 1.0261 | loss validação 1.1881
+    época  7: loss treino 1.0331 | loss validação 1.1880
+    época  8: loss treino 1.0153 | loss validação 1.1889
+    época  9: loss treino 1.0463 | loss validação 1.1883
+    época 10: loss treino 1.0407 | loss validação 1.1882
+    época 11: loss treino 1.0321 | loss validação 1.1878
+    época 12: loss treino 1.0550 | loss validação 1.1859
+    época 13: loss treino 1.0192 | loss validação 1.1843
+    época 14: loss treino 1.0255 | loss validação 1.1824
+    época 15: loss treino 1.0036 | loss validação 1.1804
+    época 16: loss treino 1.0302 | loss validação 1.1797
+    época 17: loss treino 1.0296 | loss validação 1.1793
+    época 18: loss treino 1.0240 | loss validação 1.1782
+    época 19: loss treino 1.0215 | loss validação 1.1778
+    época 20: loss treino 1.0088 | loss validação 1.1766
+    época 21: loss treino 1.0309 | loss validação 1.1751
+    época 22: loss treino 1.0266 | loss validação 1.1745
+    época 23: loss treino 1.0022 | loss validação 1.1757
+    época 24: loss treino 1.0276 | loss validação 1.1756
+    época 25: loss treino 1.0323 | loss validação 1.1738
+    época 26: loss treino 1.0382 | loss validação 1.1723
+    época 27: loss treino 0.9783 | loss validação 1.1726
+    época 28: loss treino 1.0011 | loss validação 1.1735
+    época 29: loss treino 1.0153 | loss validação 1.1742
+    época 30: loss treino 0.9896 | loss validação 1.1767
+    época 31: loss treino 0.9895 | loss validação 1.1772
+    época 32: loss treino 1.0074 | loss validação 1.1781
+    época 33: loss treino 1.0162 | loss validação 1.1785
+    época 34: loss treino 0.9966 | loss validação 1.1760
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.25, especificidade 0.74, precisao 0.33, acuracia 0.57, f1 0.29
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.65, precisao 0.33, acuracia 0.54, f1 0.33
+
+=== resnet50_3fases_central T3 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0486 | loss validação 1.1605
+    época  2: loss treino 1.0628 | loss validação 1.1601
+    época  3: loss treino 1.0679 | loss validação 1.1576
+    época  4: loss treino 1.0196 | loss validação 1.1564
+    época  5: loss treino 1.0566 | loss validação 1.1565
+    época  6: loss treino 1.0175 | loss validação 1.1559
+    época  7: loss treino 1.0493 | loss validação 1.1553
+    época  8: loss treino 1.0473 | loss validação 1.1558
+    época  9: loss treino 1.0338 | loss validação 1.1557
+    época 10: loss treino 1.0410 | loss validação 1.1560
+    época 11: loss treino 1.0393 | loss validação 1.1560
+    época 12: loss treino 1.0544 | loss validação 1.1554
+    época 13: loss treino 1.0456 | loss validação 1.1551
+    época 14: loss treino 1.0445 | loss validação 1.1542
+    época 15: loss treino 1.0198 | loss validação 1.1533
+    época 16: loss treino 1.0347 | loss validação 1.1533
+    época 17: loss treino 1.0290 | loss validação 1.1540
+    época 18: loss treino 1.0174 | loss validação 1.1538
+    época 19: loss treino 1.0410 | loss validação 1.1540
+    época 20: loss treino 1.0236 | loss validação 1.1530
+    época 21: loss treino 1.0318 | loss validação 1.1519
+    época 22: loss treino 1.0353 | loss validação 1.1512
+    época 23: loss treino 1.0222 | loss validação 1.1517
+    época 24: loss treino 1.0641 | loss validação 1.1511
+    época 25: loss treino 1.0438 | loss validação 1.1495
+    época 26: loss treino 1.0417 | loss validação 1.1484
+    época 27: loss treino 0.9927 | loss validação 1.1487
+    época 28: loss treino 1.0059 | loss validação 1.1499
+    época 29: loss treino 1.0244 | loss validação 1.1505
+    época 30: loss treino 1.0102 | loss validação 1.1520
+    época 31: loss treino 1.0115 | loss validação 1.1519
+    época 32: loss treino 1.0000 | loss validação 1.1529
+    época 33: loss treino 1.0116 | loss validação 1.1542
+    época 34: loss treino 1.0064 | loss validação 1.1524
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.65, precisao 0.43, acuracia 0.60, f1 0.46
+    teste (corte central, limiar 0.52): sensibilidade 0.33, especificidade 0.96, precisao 0.80, acuracia 0.74, f1 0.47
+
+=== vgg16_1fase_central T3 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0428 | loss validação 1.1504
+    época  2: loss treino 1.0453 | loss validação 1.1517
+    época  3: loss treino 1.0344 | loss validação 1.1525
+    época  4: loss treino 1.0471 | loss validação 1.1544
+    época  5: loss treino 1.0369 | loss validação 1.1540
+    época  6: loss treino 1.0335 | loss validação 1.1538
+    época  7: loss treino 1.0367 | loss validação 1.1551
+    época  8: loss treino 1.0396 | loss validação 1.1561
+    época  9: loss treino 1.0240 | loss validação 1.1551
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.39, precisao 0.33, acuracia 0.46, f1 0.42
+    teste (corte central, limiar 0.49): sensibilidade 0.75, especificidade 0.09, precisao 0.30, acuracia 0.31, f1 0.43
+
+=== vgg16_3fases_central T3 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.0001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0492 | loss validação 1.1582
+    época  2: loss treino 1.0531 | loss validação 1.1589
+    época  3: loss treino 1.0423 | loss validação 1.1586
+    época  4: loss treino 1.0391 | loss validação 1.1595
+    época  5: loss treino 1.0380 | loss validação 1.1590
+    época  6: loss treino 1.0295 | loss validação 1.1587
+    época  7: loss treino 1.0402 | loss validação 1.1609
+    época  8: loss treino 1.0474 | loss validação 1.1623
+    época  9: loss treino 1.0272 | loss validação 1.1603
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.17, especificidade 0.74, precisao 0.25, acuracia 0.54, f1 0.20
+    teste (corte central, limiar 0.49): sensibilidade 0.58, especificidade 0.22, precisao 0.28, acuracia 0.34, f1 0.38
+
+##### tentativa T3 concluída em 1772s acumulados #####
+
+=== cnn_1fase_central T4 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0594 | loss validação 1.1743
+    época  2: loss treino 1.0557 | loss validação 1.1715
+    época  3: loss treino 1.0430 | loss validação 1.1703
+    época  4: loss treino 1.0355 | loss validação 1.1726
+    época  5: loss treino 1.0729 | loss validação 1.1774
+    época  6: loss treino 1.0544 | loss validação 1.1822
+    época  7: loss treino 1.0449 | loss validação 1.1857
+    época  8: loss treino 1.0586 | loss validação 1.1883
+    época  9: loss treino 1.0435 | loss validação 1.1894
+    época 10: loss treino 1.0443 | loss validação 1.1899
+    época 11: loss treino 1.0686 | loss validação 1.1888
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 1.00, precisao 0.00, acuracia 0.66, f1 0.00
+    teste (corte central, limiar 0.48): sensibilidade 0.83, especificidade 0.26, precisao 0.37, acuracia 0.46, f1 0.51
+
+=== cnn_3fases_central T4 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0682 | loss validação 1.1472
+    época  2: loss treino 1.0414 | loss validação 1.1462
+    época  3: loss treino 1.0644 | loss validação 1.1450
+    época  4: loss treino 1.0647 | loss validação 1.1444
+    época  5: loss treino 1.0348 | loss validação 1.1437
+    época  6: loss treino 1.0376 | loss validação 1.1426
+    época  7: loss treino 1.0335 | loss validação 1.1416
+    época  8: loss treino 1.0354 | loss validação 1.1410
+    época  9: loss treino 1.0288 | loss validação 1.1408
+    época 10: loss treino 1.0387 | loss validação 1.1407
+    época 11: loss treino 1.0271 | loss validação 1.1408
+    época 12: loss treino 1.0437 | loss validação 1.1408
+    época 13: loss treino 1.0437 | loss validação 1.1409
+    época 14: loss treino 1.0452 | loss validação 1.1412
+    época 15: loss treino 1.0674 | loss validação 1.1414
+    época 16: loss treino 1.0510 | loss validação 1.1418
+    época 17: loss treino 1.0502 | loss validação 1.1419
+    época 18: loss treino 1.0249 | loss validação 1.1421
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.52): sensibilidade 0.25, especificidade 0.35, precisao 0.17, acuracia 0.31, f1 0.20
+
+=== resnet50_1fase_central T4 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0443 | loss validação 1.1612
+    época  2: loss treino 1.0506 | loss validação 1.1615
+    época  3: loss treino 1.0513 | loss validação 1.1615
+    época  4: loss treino 1.0284 | loss validação 1.1618
+    época  5: loss treino 1.0620 | loss validação 1.1620
+    época  6: loss treino 1.0565 | loss validação 1.1622
+    época  7: loss treino 1.0534 | loss validação 1.1622
+    época  8: loss treino 1.0571 | loss validação 1.1623
+    época  9: loss treino 1.0360 | loss validação 1.1624
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.35, precisao 0.32, acuracia 0.43, f1 0.41
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+
+=== resnet50_3fases_central T4 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0473 | loss validação 1.1613
+    época  2: loss treino 1.0550 | loss validação 1.1616
+    época  3: loss treino 1.0593 | loss validação 1.1616
+    época  4: loss treino 1.0453 | loss validação 1.1617
+    época  5: loss treino 1.0623 | loss validação 1.1618
+    época  6: loss treino 1.0477 | loss validação 1.1619
+    época  7: loss treino 1.0475 | loss validação 1.1620
+    época  8: loss treino 1.0539 | loss validação 1.1622
+    época  9: loss treino 1.0350 | loss validação 1.1621
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.57, precisao 0.38, acuracia 0.54, f1 0.43
+    teste (corte central, limiar 0.52): sensibilidade 0.25, especificidade 0.96, precisao 0.75, acuracia 0.71, f1 0.38
+
+=== vgg16_1fase_central T4 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0471 | loss validação 1.1739
+    época  2: loss treino 1.0475 | loss validação 1.1738
+    época  3: loss treino 1.0591 | loss validação 1.1738
+    época  4: loss treino 1.0359 | loss validação 1.1734
+    época  5: loss treino 1.0519 | loss validação 1.1731
+    época  6: loss treino 1.0486 | loss validação 1.1731
+    época  7: loss treino 1.0408 | loss validação 1.1726
+    época  8: loss treino 1.0507 | loss validação 1.1724
+    época  9: loss treino 1.0518 | loss validação 1.1723
+    época 10: loss treino 1.0512 | loss validação 1.1720
+    época 11: loss treino 1.0360 | loss validação 1.1715
+    época 12: loss treino 1.0432 | loss validação 1.1711
+    época 13: loss treino 1.0502 | loss validação 1.1711
+    época 14: loss treino 1.0494 | loss validação 1.1712
+    época 15: loss treino 1.0511 | loss validação 1.1713
+    época 16: loss treino 1.0483 | loss validação 1.1712
+    época 17: loss treino 1.0443 | loss validação 1.1709
+    época 18: loss treino 1.0497 | loss validação 1.1707
+    época 19: loss treino 1.0521 | loss validação 1.1706
+    época 20: loss treino 1.0399 | loss validação 1.1703
+    época 21: loss treino 1.0365 | loss validação 1.1702
+    época 22: loss treino 1.0545 | loss validação 1.1699
+    época 23: loss treino 1.0487 | loss validação 1.1699
+    época 24: loss treino 1.0335 | loss validação 1.1699
+    época 25: loss treino 1.0443 | loss validação 1.1697
+    época 26: loss treino 1.0422 | loss validação 1.1696
+    época 27: loss treino 1.0337 | loss validação 1.1697
+    época 28: loss treino 1.0415 | loss validação 1.1696
+    época 29: loss treino 1.0309 | loss validação 1.1692
+    época 30: loss treino 1.0370 | loss validação 1.1690
+    época 31: loss treino 1.0443 | loss validação 1.1685
+    época 32: loss treino 1.0498 | loss validação 1.1682
+    época 33: loss treino 1.0340 | loss validação 1.1678
+    época 34: loss treino 1.0437 | loss validação 1.1676
+    época 35: loss treino 1.0341 | loss validação 1.1674
+    época 36: loss treino 1.0606 | loss validação 1.1675
+    época 37: loss treino 1.0418 | loss validação 1.1673
+    época 38: loss treino 1.0356 | loss validação 1.1669
+    época 39: loss treino 1.0445 | loss validação 1.1667
+    época 40: loss treino 1.0387 | loss validação 1.1664
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 1.00, precisao 0.00, acuracia 0.66, f1 0.00
+    teste (corte central, limiar 0.48): sensibilidade 0.25, especificidade 0.78, precisao 0.38, acuracia 0.60, f1 0.30
+
+=== vgg16_3fases_central T4 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0513 | loss validação 1.1722
+    época  2: loss treino 1.0551 | loss validação 1.1719
+    época  3: loss treino 1.0538 | loss validação 1.1718
+    época  4: loss treino 1.0373 | loss validação 1.1714
+    época  5: loss treino 1.0551 | loss validação 1.1709
+    época  6: loss treino 1.0556 | loss validação 1.1708
+    época  7: loss treino 1.0517 | loss validação 1.1703
+    época  8: loss treino 1.0572 | loss validação 1.1698
+    época  9: loss treino 1.0511 | loss validação 1.1696
+    época 10: loss treino 1.0496 | loss validação 1.1692
+    época 11: loss treino 1.0437 | loss validação 1.1687
+    época 12: loss treino 1.0467 | loss validação 1.1683
+    época 13: loss treino 1.0541 | loss validação 1.1681
+    época 14: loss treino 1.0517 | loss validação 1.1682
+    época 15: loss treino 1.0553 | loss validação 1.1683
+    época 16: loss treino 1.0484 | loss validação 1.1681
+    época 17: loss treino 1.0457 | loss validação 1.1679
+    época 18: loss treino 1.0486 | loss validação 1.1679
+    época 19: loss treino 1.0548 | loss validação 1.1679
+    época 20: loss treino 1.0369 | loss validação 1.1677
+    época 21: loss treino 1.0307 | loss validação 1.1677
+    época 22: loss treino 1.0525 | loss validação 1.1675
+    época 23: loss treino 1.0451 | loss validação 1.1676
+    época 24: loss treino 1.0315 | loss validação 1.1677
+    época 25: loss treino 1.0502 | loss validação 1.1675
+    época 26: loss treino 1.0405 | loss validação 1.1675
+    época 27: loss treino 1.0319 | loss validação 1.1675
+    época 28: loss treino 1.0439 | loss validação 1.1674
+    época 29: loss treino 1.0285 | loss validação 1.1670
+    época 30: loss treino 1.0428 | loss validação 1.1669
+    época 31: loss treino 1.0460 | loss validação 1.1665
+    época 32: loss treino 1.0499 | loss validação 1.1661
+    época 33: loss treino 1.0336 | loss validação 1.1657
+    época 34: loss treino 1.0423 | loss validação 1.1653
+    época 35: loss treino 1.0375 | loss validação 1.1650
+    época 36: loss treino 1.0580 | loss validação 1.1651
+    época 37: loss treino 1.0423 | loss validação 1.1649
+    época 38: loss treino 1.0372 | loss validação 1.1646
+    época 39: loss treino 1.0477 | loss validação 1.1644
+    época 40: loss treino 1.0513 | loss validação 1.1641
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 0.96, precisao 0.00, acuracia 0.63, f1 0.00
+    teste (corte central, limiar 0.48): sensibilidade 0.25, especificidade 0.83, precisao 0.43, acuracia 0.63, f1 0.32
+
+=== cnn_1fase_central T4 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0468 | loss validação 1.1713
+    época  2: loss treino 1.0821 | loss validação 1.1658
+    época  3: loss treino 1.0703 | loss validação 1.1554
+    época  4: loss treino 1.0578 | loss validação 1.1439
+    época  5: loss treino 1.0578 | loss validação 1.1354
+    época  6: loss treino 1.0333 | loss validação 1.1316
+    época  7: loss treino 1.0625 | loss validação 1.1305
+    época  8: loss treino 1.0466 | loss validação 1.1301
+    época  9: loss treino 1.0447 | loss validação 1.1300
+    época 10: loss treino 1.0674 | loss validação 1.1298
+    época 11: loss treino 1.0665 | loss validação 1.1300
+    época 12: loss treino 1.0314 | loss validação 1.1301
+    época 13: loss treino 1.0592 | loss validação 1.1303
+    época 14: loss treino 1.0496 | loss validação 1.1304
+    época 15: loss treino 1.0689 | loss validação 1.1305
+    época 16: loss treino 1.0731 | loss validação 1.1307
+    época 17: loss treino 1.0359 | loss validação 1.1304
+    época 18: loss treino 1.0663 | loss validação 1.1305
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.57): sensibilidade 0.25, especificidade 0.43, precisao 0.19, acuracia 0.37, f1 0.21
+
+=== cnn_3fases_central T4 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0717 | loss validação 1.1458
+    época  2: loss treino 1.0445 | loss validação 1.1438
+    época  3: loss treino 1.0176 | loss validação 1.1450
+    época  4: loss treino 1.0408 | loss validação 1.1484
+    época  5: loss treino 1.0618 | loss validação 1.1502
+    época  6: loss treino 1.0626 | loss validação 1.1515
+    época  7: loss treino 1.0240 | loss validação 1.1523
+    época  8: loss treino 1.0534 | loss validação 1.1534
+    época  9: loss treino 1.0558 | loss validação 1.1541
+    época 10: loss treino 1.0292 | loss validação 1.1546
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.52): sensibilidade 0.58, especificidade 0.74, precisao 0.54, acuracia 0.69, f1 0.56
+
+=== resnet50_1fase_central T4 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0228 | loss validação 1.1794
+    época  2: loss treino 1.0418 | loss validação 1.1795
+    época  3: loss treino 1.0774 | loss validação 1.1795
+    época  4: loss treino 1.0620 | loss validação 1.1798
+    época  5: loss treino 1.0317 | loss validação 1.1798
+    época  6: loss treino 1.0530 | loss validação 1.1797
+    época  7: loss treino 1.0410 | loss validação 1.1797
+    época  8: loss treino 1.0414 | loss validação 1.1797
+    época  9: loss treino 1.0724 | loss validação 1.1799
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.70, precisao 0.36, acuracia 0.57, f1 0.35
+    teste (corte central, limiar 0.49): sensibilidade 0.58, especificidade 0.61, precisao 0.44, acuracia 0.60, f1 0.50
+
+=== resnet50_3fases_central T4 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0347 | loss validação 1.1753
+    época  2: loss treino 1.0398 | loss validação 1.1752
+    época  3: loss treino 1.0809 | loss validação 1.1749
+    época  4: loss treino 1.0346 | loss validação 1.1751
+    época  5: loss treino 1.0404 | loss validação 1.1748
+    época  6: loss treino 1.0432 | loss validação 1.1746
+    época  7: loss treino 1.0428 | loss validação 1.1745
+    época  8: loss treino 1.0440 | loss validação 1.1743
+    época  9: loss treino 1.0640 | loss validação 1.1743
+    época 10: loss treino 1.0336 | loss validação 1.1744
+    época 11: loss treino 1.0348 | loss validação 1.1744
+    época 12: loss treino 1.0334 | loss validação 1.1744
+    época 13: loss treino 1.0634 | loss validação 1.1743
+    época 14: loss treino 1.0509 | loss validação 1.1743
+    época 15: loss treino 1.0575 | loss validação 1.1743
+    época 16: loss treino 1.0472 | loss validação 1.1742
+    época 17: loss treino 1.0362 | loss validação 1.1743
+    época 18: loss treino 1.0403 | loss validação 1.1743
+    época 19: loss treino 1.0382 | loss validação 1.1742
+    época 20: loss treino 1.0284 | loss validação 1.1740
+    época 21: loss treino 1.0239 | loss validação 1.1739
+    época 22: loss treino 1.0191 | loss validação 1.1740
+    época 23: loss treino 1.0465 | loss validação 1.1740
+    época 24: loss treino 1.0296 | loss validação 1.1741
+    época 25: loss treino 1.0258 | loss validação 1.1740
+    época 26: loss treino 1.0385 | loss validação 1.1740
+    época 27: loss treino 1.0617 | loss validação 1.1739
+    época 28: loss treino 1.0346 | loss validação 1.1740
+    época 29: loss treino 1.0442 | loss validação 1.1741
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.65, precisao 0.33, acuracia 0.54, f1 0.33
+    teste (corte central, limiar 0.52): sensibilidade 0.08, especificidade 1.00, precisao 1.00, acuracia 0.69, f1 0.15
+
+=== vgg16_1fase_central T4 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0413 | loss validação 1.1385
+    época  2: loss treino 1.0473 | loss validação 1.1389
+    época  3: loss treino 1.0459 | loss validação 1.1394
+    época  4: loss treino 1.0541 | loss validação 1.1395
+    época  5: loss treino 1.0578 | loss validação 1.1397
+    época  6: loss treino 1.0361 | loss validação 1.1400
+    época  7: loss treino 1.0468 | loss validação 1.1402
+    época  8: loss treino 1.0553 | loss validação 1.1406
+    época  9: loss treino 1.0455 | loss validação 1.1408
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.53): sensibilidade 0.67, especificidade 0.52, precisao 0.42, acuracia 0.57, f1 0.52
+
+=== vgg16_3fases_central T4 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0401 | loss validação 1.1412
+    época  2: loss treino 1.0419 | loss validação 1.1416
+    época  3: loss treino 1.0411 | loss validação 1.1420
+    época  4: loss treino 1.0483 | loss validação 1.1422
+    época  5: loss treino 1.0530 | loss validação 1.1425
+    época  6: loss treino 1.0409 | loss validação 1.1428
+    época  7: loss treino 1.0537 | loss validação 1.1430
+    época  8: loss treino 1.0603 | loss validação 1.1434
+    época  9: loss treino 1.0413 | loss validação 1.1436
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.53): sensibilidade 0.92, especificidade 0.09, precisao 0.34, acuracia 0.37, f1 0.50
+
+=== cnn_1fase_central T4 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0661 | loss validação 1.1348
+    época  2: loss treino 1.0510 | loss validação 1.1349
+    época  3: loss treino 1.0526 | loss validação 1.1349
+    época  4: loss treino 1.0425 | loss validação 1.1359
+    época  5: loss treino 1.0677 | loss validação 1.1359
+    época  6: loss treino 1.0481 | loss validação 1.1362
+    época  7: loss treino 1.0552 | loss validação 1.1363
+    época  8: loss treino 1.0505 | loss validação 1.1364
+    época  9: loss treino 1.0539 | loss validação 1.1366
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.54): sensibilidade 0.33, especificidade 0.70, precisao 0.36, acuracia 0.57, f1 0.35
+
+=== cnn_3fases_central T4 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0559 | loss validação 1.1514
+    época  2: loss treino 1.0395 | loss validação 1.1495
+    época  3: loss treino 1.0497 | loss validação 1.1486
+    época  4: loss treino 1.0547 | loss validação 1.1489
+    época  5: loss treino 1.0534 | loss validação 1.1478
+    época  6: loss treino 1.0277 | loss validação 1.1479
+    época  7: loss treino 1.0527 | loss validação 1.1483
+    época  8: loss treino 1.0474 | loss validação 1.1491
+    época  9: loss treino 1.0495 | loss validação 1.1505
+    época 10: loss treino 1.0281 | loss validação 1.1513
+    época 11: loss treino 1.0353 | loss validação 1.1514
+    época 12: loss treino 1.0397 | loss validação 1.1519
+    época 13: loss treino 1.0506 | loss validação 1.1525
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.53): sensibilidade 0.00, especificidade 0.96, precisao 0.00, acuracia 0.63, f1 0.00
+
+=== resnet50_1fase_central T4 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0424 | loss validação 1.1940
+    época  2: loss treino 1.0716 | loss validação 1.1938
+    época  3: loss treino 1.0657 | loss validação 1.1934
+    época  4: loss treino 1.0372 | loss validação 1.1933
+    época  5: loss treino 1.0506 | loss validação 1.1933
+    época  6: loss treino 1.0352 | loss validação 1.1932
+    época  7: loss treino 1.0432 | loss validação 1.1931
+    época  8: loss treino 1.0268 | loss validação 1.1932
+    época  9: loss treino 1.0581 | loss validação 1.1930
+    época 10: loss treino 1.0561 | loss validação 1.1930
+    época 11: loss treino 1.0483 | loss validação 1.1929
+    época 12: loss treino 1.0742 | loss validação 1.1926
+    época 13: loss treino 1.0372 | loss validação 1.1924
+    época 14: loss treino 1.0453 | loss validação 1.1921
+    época 15: loss treino 1.0220 | loss validação 1.1918
+    época 16: loss treino 1.0570 | loss validação 1.1916
+    época 17: loss treino 1.0543 | loss validação 1.1915
+    época 18: loss treino 1.0511 | loss validação 1.1912
+    época 19: loss treino 1.0524 | loss validação 1.1910
+    época 20: loss treino 1.0396 | loss validação 1.1907
+    época 21: loss treino 1.0626 | loss validação 1.1904
+    época 22: loss treino 1.0595 | loss validação 1.1902
+    época 23: loss treino 1.0374 | loss validação 1.1901
+    época 24: loss treino 1.0594 | loss validação 1.1899
+    época 25: loss treino 1.0706 | loss validação 1.1896
+    época 26: loss treino 1.0714 | loss validação 1.1893
+    época 27: loss treino 1.0175 | loss validação 1.1891
+    época 28: loss treino 1.0416 | loss validação 1.1890
+    época 29: loss treino 1.0580 | loss validação 1.1890
+    época 30: loss treino 1.0343 | loss validação 1.1891
+    época 31: loss treino 1.0317 | loss validação 1.1890
+    época 32: loss treino 1.0572 | loss validação 1.1889
+    época 33: loss treino 1.0612 | loss validação 1.1889
+    época 34: loss treino 1.0451 | loss validação 1.1885
+    época 35: loss treino 1.0190 | loss validação 1.1885
+    época 36: loss treino 1.0475 | loss validação 1.1883
+    época 37: loss treino 1.0390 | loss validação 1.1884
+    época 38: loss treino 1.0445 | loss validação 1.1883
+    época 39: loss treino 1.0598 | loss validação 1.1881
+    época 40: loss treino 1.0465 | loss validação 1.1878
+    teste (corte central, limiar 0.50): sensibilidade 0.17, especificidade 0.78, precisao 0.29, acuracia 0.57, f1 0.21
+    teste (corte central, limiar 0.48): sensibilidade 0.42, especificidade 0.61, precisao 0.36, acuracia 0.54, f1 0.38
+
+=== resnet50_3fases_central T4 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0483 | loss validação 1.1611
+    época  2: loss treino 1.0642 | loss validação 1.1611
+    época  3: loss treino 1.0704 | loss validação 1.1608
+    época  4: loss treino 1.0243 | loss validação 1.1607
+    época  5: loss treino 1.0617 | loss validação 1.1606
+    época  6: loss treino 1.0243 | loss validação 1.1606
+    época  7: loss treino 1.0596 | loss validação 1.1605
+    época  8: loss treino 1.0571 | loss validação 1.1605
+    época  9: loss treino 1.0440 | loss validação 1.1604
+    época 10: loss treino 1.0546 | loss validação 1.1604
+    época 11: loss treino 1.0523 | loss validação 1.1604
+    época 12: loss treino 1.0705 | loss validação 1.1603
+    época 13: loss treino 1.0597 | loss validação 1.1602
+    época 14: loss treino 1.0629 | loss validação 1.1601
+    época 15: loss treino 1.0395 | loss validação 1.1600
+    época 16: loss treino 1.0565 | loss validação 1.1599
+    época 17: loss treino 1.0524 | loss validação 1.1599
+    época 18: loss treino 1.0390 | loss validação 1.1599
+    época 19: loss treino 1.0702 | loss validação 1.1598
+    época 20: loss treino 1.0503 | loss validação 1.1597
+    época 21: loss treino 1.0576 | loss validação 1.1595
+    época 22: loss treino 1.0641 | loss validação 1.1594
+    época 23: loss treino 1.0514 | loss validação 1.1594
+    época 24: loss treino 1.0935 | loss validação 1.1592
+    época 25: loss treino 1.0771 | loss validação 1.1590
+    época 26: loss treino 1.0782 | loss validação 1.1588
+    época 27: loss treino 1.0250 | loss validação 1.1587
+    época 28: loss treino 1.0447 | loss validação 1.1587
+    época 29: loss treino 1.0640 | loss validação 1.1587
+    época 30: loss treino 1.0482 | loss validação 1.1588
+    época 31: loss treino 1.0513 | loss validação 1.1587
+    época 32: loss treino 1.0407 | loss validação 1.1587
+    época 33: loss treino 1.0505 | loss validação 1.1588
+    época 34: loss treino 1.0516 | loss validação 1.1585
+    época 35: loss treino 1.0363 | loss validação 1.1586
+    época 36: loss treino 1.0503 | loss validação 1.1585
+    época 37: loss treino 1.0326 | loss validação 1.1586
+    época 38: loss treino 1.0371 | loss validação 1.1586
+    época 39: loss treino 1.0538 | loss validação 1.1585
+    época 40: loss treino 1.0481 | loss validação 1.1584
+    teste (corte central, limiar 0.50): sensibilidade 0.25, especificidade 0.83, precisao 0.43, acuracia 0.63, f1 0.32
+    teste (corte central, limiar 0.50): sensibilidade 0.25, especificidade 0.74, precisao 0.33, acuracia 0.57, f1 0.29
+
+=== vgg16_1fase_central T4 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0415 | loss validação 1.1471
+    época  2: loss treino 1.0453 | loss validação 1.1473
+    época  3: loss treino 1.0368 | loss validação 1.1474
+    época  4: loss treino 1.0463 | loss validação 1.1477
+    época  5: loss treino 1.0412 | loss validação 1.1478
+    época  6: loss treino 1.0399 | loss validação 1.1479
+    época  7: loss treino 1.0426 | loss validação 1.1481
+    época  8: loss treino 1.0473 | loss validação 1.1482
+    época  9: loss treino 1.0333 | loss validação 1.1482
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.13, precisao 0.29, acuracia 0.31, f1 0.40
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.09, precisao 0.30, acuracia 0.31, f1 0.43
+
+=== vgg16_3fases_central T4 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 1e-05, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0467 | loss validação 1.1524
+    época  2: loss treino 1.0526 | loss validação 1.1525
+    época  3: loss treino 1.0466 | loss validação 1.1525
+    época  4: loss treino 1.0415 | loss validação 1.1527
+    época  5: loss treino 1.0443 | loss validação 1.1527
+    época  6: loss treino 1.0363 | loss validação 1.1527
+    época  7: loss treino 1.0437 | loss validação 1.1530
+    época  8: loss treino 1.0557 | loss validação 1.1532
+    época  9: loss treino 1.0339 | loss validação 1.1531
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.48, precisao 0.25, acuracia 0.43, f1 0.29
+    teste (corte central, limiar 0.49): sensibilidade 0.58, especificidade 0.17, precisao 0.27, acuracia 0.31, f1 0.37
+
+##### tentativa T4 concluída em 2865s acumulados #####
+
+Resumo do ajuste (média das sementes [42, 43, 44]):
+tentativa     rede regime  auc_validacao  auc_validacao_dp  perda_validacao  auc_teste  f1_teste  melhor_epoca  tempo_treino_s
+       T1      cnn  1fase          0.402             0.227            1.139      0.527     0.329         8.000          11.833
+       T1      cnn 3fases          0.448             0.166            1.149      0.537     0.312         3.333          17.333
+       T1 resnet50  1fase          0.493             0.033            1.155      0.539     0.435         3.000          19.400
+       T1 resnet50 3fases          0.450             0.069            1.144      0.628     0.372         3.000          28.300
+       T1    vgg16  1fase          0.544             0.013            1.125      0.574     0.374        12.667          60.933
+       T1    vgg16 3fases          0.548             0.021            1.142      0.593     0.414         6.333          52.900
+       T2      cnn  1fase          0.395             0.097            1.148      0.543     0.255         2.333           7.567
+       T2      cnn 3fases          0.495             0.078            1.143      0.591     0.257         5.000          19.600
+       T2 resnet50  1fase          0.488             0.077            1.172      0.534     0.420         8.000          28.633
+       T2 resnet50 3fases          0.427             0.078            1.156      0.586     0.363        10.333          46.867
+       T2    vgg16  1fase          0.489             0.025            1.151      0.597     0.467         8.333          48.033
+       T2    vgg16 3fases          0.522             0.079            1.152      0.482     0.440         5.000          48.000
+       T3      cnn  1fase          0.439             0.171            1.147      0.536     0.448         3.000           8.000
+       T3      cnn 3fases          0.357             0.072            1.148      0.576     0.396         2.000          15.200
+       T3 resnet50  1fase          0.490             0.062            1.173      0.521     0.399        11.667          35.000
+       T3 resnet50 3fases          0.408             0.108            1.161      0.565     0.373        11.667          49.900
+       T3    vgg16  1fase          0.555             0.056            1.149      0.546     0.379         4.667          37.167
+       T3    vgg16 3fases          0.529             0.151            1.152      0.478     0.293         4.667          46.733
+       T4      cnn  1fase          0.401             0.118            1.145      0.521     0.358         4.667          13.333
+       T4      cnn 3fases          0.467             0.131            1.144      0.512     0.253         5.667          24.667
+       T4 resnet50  1fase          0.500             0.072            1.176      0.501     0.447        14.000          53.900
+       T4 resnet50 3fases          0.412             0.118            1.165      0.527     0.272        20.667          84.033
+       T4    vgg16  1fase          0.565             0.049            1.151      0.524     0.415        14.000          86.733
+       T4    vgg16 3fases          0.530             0.131            1.153      0.470     0.395        14.000          97.467
+
+Resumo salvo em /Users/tulio/Downloads/TrabPAI/repo/resultados/ajuste_resumo.csv
+  lidos 43/172 pacientes
+  lidos 86/172 pacientes
+  lidos 129/172 pacientes
+  lidos 172/172 pacientes
+
+=== cnn_1fase_central T5 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0663 | loss validação 1.1611
+    época  2: loss treino 1.0306 | loss validação 1.1602
+    época  3: loss treino 1.0361 | loss validação 1.1572
+    época  4: loss treino 1.0219 | loss validação 1.1582
+    época  5: loss treino 1.0448 | loss validação 1.1656
+    época  6: loss treino 1.0297 | loss validação 1.1660
+    época  7: loss treino 1.0487 | loss validação 1.1573
+    época  8: loss treino 1.0348 | loss validação 1.1495
+    época  9: loss treino 1.0343 | loss validação 1.1807
+    época 10: loss treino 1.0250 | loss validação 1.2109
+    época 11: loss treino 1.0294 | loss validação 1.1704
+    época 12: loss treino 1.0069 | loss validação 1.1267
+    época 13: loss treino 1.0187 | loss validação 1.2037
+    época 14: loss treino 1.0181 | loss validação 1.1622
+    época 15: loss treino 1.0251 | loss validação 1.2068
+    época 16: loss treino 0.9984 | loss validação 1.2592
+    época 17: loss treino 0.9773 | loss validação 1.1597
+    época 18: loss treino 1.0161 | loss validação 1.1132
+    época 19: loss treino 1.0045 | loss validação 1.2310
+    época 20: loss treino 1.0048 | loss validação 1.1843
+    época 21: loss treino 1.0164 | loss validação 1.1511
+    época 22: loss treino 0.9796 | loss validação 1.2018
+    época 23: loss treino 1.0056 | loss validação 1.2079
+    época 24: loss treino 1.0045 | loss validação 1.2571
+    época 25: loss treino 1.0131 | loss validação 1.1358
+    época 26: loss treino 1.0026 | loss validação 1.1922
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.17, precisao 0.32, acuracia 0.37, f1 0.45
+    teste (corte central, limiar 0.55): sensibilidade 0.33, especificidade 0.48, precisao 0.25, acuracia 0.43, f1 0.29
+
+=== cnn_3fases_central T5 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0932 | loss validação 1.1434
+    época  2: loss treino 1.0205 | loss validação 1.1394
+    época  3: loss treino 1.0459 | loss validação 1.1409
+    época  4: loss treino 1.0328 | loss validação 1.1305
+    época  5: loss treino 1.0252 | loss validação 1.1461
+    época  6: loss treino 1.0379 | loss validação 1.1691
+    época  7: loss treino 1.0235 | loss validação 1.1611
+    época  8: loss treino 1.0105 | loss validação 1.1659
+    época  9: loss treino 1.0138 | loss validação 1.1775
+    época 10: loss treino 1.0085 | loss validação 1.1699
+    época 11: loss treino 0.9789 | loss validação 1.1909
+    época 12: loss treino 0.9852 | loss validação 1.1967
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.52, precisao 0.35, acuracia 0.51, f1 0.41
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.52, precisao 0.35, acuracia 0.51, f1 0.41
+
+=== resnet50_1fase_central T5 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0452 | loss validação 1.1883
+    época  2: loss treino 1.0357 | loss validação 1.1695
+    época  3: loss treino 1.0152 | loss validação 1.1445
+    época  4: loss treino 0.9776 | loss validação 1.1551
+    época  5: loss treino 1.0143 | loss validação 1.1691
+    época  6: loss treino 0.9723 | loss validação 1.1710
+    época  7: loss treino 0.9604 | loss validação 1.1642
+    época  8: loss treino 0.9578 | loss validação 1.1766
+    época  9: loss treino 0.9145 | loss validação 1.1752
+    época 10: loss treino 0.9422 | loss validação 1.1951
+    época 11: loss treino 0.9361 | loss validação 1.1782
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.30, precisao 0.36, acuracia 0.46, f1 0.49
+    teste (corte central, limiar 0.51): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+
+=== resnet50_3fases_central T5 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0475 | loss validação 1.1897
+    época  2: loss treino 1.0473 | loss validação 1.1743
+    época  3: loss treino 1.0338 | loss validação 1.1431
+    época  4: loss treino 0.9845 | loss validação 1.1436
+    época  5: loss treino 1.0049 | loss validação 1.1537
+    época  6: loss treino 0.9539 | loss validação 1.1680
+    época  7: loss treino 0.9744 | loss validação 1.1770
+    época  8: loss treino 0.9668 | loss validação 1.1857
+    época  9: loss treino 0.9450 | loss validação 1.1662
+    época 10: loss treino 0.9281 | loss validação 1.1747
+    época 11: loss treino 0.9457 | loss validação 1.1765
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.48, precisao 0.40, acuracia 0.54, f1 0.50
+    teste (corte central, limiar 0.54): sensibilidade 0.42, especificidade 0.87, precisao 0.62, acuracia 0.71, f1 0.50
+
+=== vgg16_1fase_central T5 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0464 | loss validação 1.1695
+    época  2: loss treino 1.0554 | loss validação 1.1715
+    época  3: loss treino 1.0826 | loss validação 1.1598
+    época  4: loss treino 1.0076 | loss validação 1.1422
+    época  5: loss treino 1.0298 | loss validação 1.1455
+    época  6: loss treino 1.0358 | loss validação 1.1780
+    época  7: loss treino 1.0106 | loss validação 1.1621
+    época  8: loss treino 1.0378 | loss validação 1.1542
+    época  9: loss treino 1.0131 | loss validação 1.1628
+    época 10: loss treino 1.0202 | loss validação 1.1526
+    época 11: loss treino 0.9942 | loss validação 1.1476
+    época 12: loss treino 1.0082 | loss validação 1.1621
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.26, precisao 0.32, acuracia 0.40, f1 0.43
+    teste (corte central, limiar 0.51): sensibilidade 0.42, especificidade 0.65, precisao 0.38, acuracia 0.57, f1 0.40
+
+=== vgg16_3fases_central T5 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0506 | loss validação 1.1586
+    época  2: loss treino 1.0532 | loss validação 1.1667
+    época  3: loss treino 1.0801 | loss validação 1.1645
+    época  4: loss treino 0.9960 | loss validação 1.1452
+    época  5: loss treino 1.0309 | loss validação 1.1474
+    época  6: loss treino 1.0439 | loss validação 1.1816
+    época  7: loss treino 1.0164 | loss validação 1.1582
+    época  8: loss treino 1.0251 | loss validação 1.1542
+    época  9: loss treino 1.0229 | loss validação 1.1711
+    época 10: loss treino 1.0166 | loss validação 1.1755
+    época 11: loss treino 0.9896 | loss validação 1.1595
+    época 12: loss treino 1.0221 | loss validação 1.1578
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.83, especificidade 0.30, precisao 0.38, acuracia 0.49, f1 0.53
+    teste (corte central, limiar 0.52): sensibilidade 0.08, especificidade 0.78, precisao 0.17, acuracia 0.54, f1 0.11
+
+=== cnn_1fase_central T5 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0535 | loss validação 1.1694
+    época  2: loss treino 1.0540 | loss validação 1.1685
+    época  3: loss treino 1.0450 | loss validação 1.1523
+    época  4: loss treino 1.0294 | loss validação 1.1594
+    época  5: loss treino 1.0392 | loss validação 1.1517
+    época  6: loss treino 1.0323 | loss validação 1.1564
+    época  7: loss treino 1.0316 | loss validação 1.1532
+    época  8: loss treino 1.0354 | loss validação 1.1592
+    época  9: loss treino 1.0236 | loss validação 1.1393
+    época 10: loss treino 1.0358 | loss validação 1.1444
+    época 11: loss treino 1.0422 | loss validação 1.1962
+    época 12: loss treino 1.0238 | loss validação 1.1420
+    época 13: loss treino 1.0266 | loss validação 1.1666
+    época 14: loss treino 1.0263 | loss validação 1.2247
+    época 15: loss treino 1.0303 | loss validação 1.1396
+    época 16: loss treino 1.0314 | loss validação 1.1203
+    época 17: loss treino 1.0526 | loss validação 1.1039
+    época 18: loss treino 1.0277 | loss validação 1.1313
+    época 19: loss treino 1.0053 | loss validação 1.1410
+    época 20: loss treino 1.0318 | loss validação 1.2580
+    época 21: loss treino 1.0248 | loss validação 1.1828
+    época 22: loss treino 1.0302 | loss validação 1.1234
+    época 23: loss treino 1.0306 | loss validação 1.1417
+    época 24: loss treino 1.0299 | loss validação 1.1542
+    época 25: loss treino 1.0428 | loss validação 1.1533
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.92, especificidade 0.09, precisao 0.34, acuracia 0.37, f1 0.50
+    teste (corte central, limiar 0.53): sensibilidade 0.58, especificidade 0.43, precisao 0.35, acuracia 0.49, f1 0.44
+
+=== cnn_3fases_central T5 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0907 | loss validação 1.1636
+    época  2: loss treino 1.0421 | loss validação 1.1879
+    época  3: loss treino 1.0244 | loss validação 1.2130
+    época  4: loss treino 1.0251 | loss validação 1.2382
+    época  5: loss treino 1.0459 | loss validação 1.2093
+    época  6: loss treino 1.0256 | loss validação 1.1790
+    época  7: loss treino 1.0120 | loss validação 1.2056
+    época  8: loss treino 1.0110 | loss validação 1.2183
+    época  9: loss treino 0.9927 | loss validação 1.1759
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.42, especificidade 0.70, precisao 0.42, acuracia 0.60, f1 0.42
+    teste (corte central, limiar 0.51): sensibilidade 0.00, especificidade 0.83, precisao 0.00, acuracia 0.54, f1 0.00
+
+=== resnet50_1fase_central T5 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0347 | loss validação 1.2140
+    época  2: loss treino 1.0270 | loss validação 1.1820
+    época  3: loss treino 1.0460 | loss validação 1.1582
+    época  4: loss treino 1.0218 | loss validação 1.1885
+    época  5: loss treino 0.9725 | loss validação 1.1747
+    época  6: loss treino 0.9804 | loss validação 1.1619
+    época  7: loss treino 0.9561 | loss validação 1.1723
+    época  8: loss treino 0.9530 | loss validação 1.1797
+    época  9: loss treino 0.9734 | loss validação 1.2050
+    época 10: loss treino 0.9044 | loss validação 1.2115
+    época 11: loss treino 0.8903 | loss validação 1.2024
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.35, precisao 0.32, acuracia 0.43, f1 0.41
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.35, precisao 0.32, acuracia 0.43, f1 0.41
+
+=== resnet50_3fases_central T5 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0481 | loss validação 1.1957
+    época  2: loss treino 1.0278 | loss validação 1.1693
+    época  3: loss treino 1.0607 | loss validação 1.1474
+    época  4: loss treino 1.0051 | loss validação 1.1694
+    época  5: loss treino 0.9936 | loss validação 1.1618
+    época  6: loss treino 0.9850 | loss validação 1.1594
+    época  7: loss treino 0.9668 | loss validação 1.1702
+    época  8: loss treino 0.9717 | loss validação 1.1724
+    época  9: loss treino 0.9692 | loss validação 1.1962
+    época 10: loss treino 0.9361 | loss validação 1.2073
+    época 11: loss treino 0.9031 | loss validação 1.2042
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.53): sensibilidade 0.33, especificidade 0.70, precisao 0.36, acuracia 0.57, f1 0.35
+
+=== vgg16_1fase_central T5 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0361 | loss validação 1.1676
+    época  2: loss treino 1.0315 | loss validação 1.1772
+    época  3: loss treino 1.0329 | loss validação 1.1858
+    época  4: loss treino 1.0358 | loss validação 1.1438
+    época  5: loss treino 1.0543 | loss validação 1.1291
+    época  6: loss treino 1.0241 | loss validação 1.1324
+    época  7: loss treino 1.0324 | loss validação 1.1463
+    época  8: loss treino 1.0155 | loss validação 1.1657
+    época  9: loss treino 1.0345 | loss validação 1.1661
+    época 10: loss treino 1.0124 | loss validação 1.1713
+    época 11: loss treino 1.0003 | loss validação 1.1376
+    época 12: loss treino 1.0203 | loss validação 1.1267
+    época 13: loss treino 0.9954 | loss validação 1.1326
+    época 14: loss treino 1.0038 | loss validação 1.1604
+    época 15: loss treino 0.9881 | loss validação 1.1656
+    época 16: loss treino 0.9857 | loss validação 1.1686
+    época 17: loss treino 0.9685 | loss validação 1.1511
+    época 18: loss treino 0.9751 | loss validação 1.1747
+    época 19: loss treino 0.9666 | loss validação 1.1641
+    época 20: loss treino 0.9754 | loss validação 1.1538
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.53): sensibilidade 0.92, especificidade 0.26, precisao 0.39, acuracia 0.49, f1 0.55
+
+=== vgg16_3fases_central T5 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0276 | loss validação 1.1824
+    época  2: loss treino 1.0278 | loss validação 1.1792
+    época  3: loss treino 1.0214 | loss validação 1.1753
+    época  4: loss treino 1.0227 | loss validação 1.1481
+    época  5: loss treino 1.0593 | loss validação 1.1425
+    época  6: loss treino 1.0146 | loss validação 1.1565
+    época  7: loss treino 1.0525 | loss validação 1.1696
+    época  8: loss treino 0.9980 | loss validação 1.1851
+    época  9: loss treino 1.0467 | loss validação 1.1695
+    época 10: loss treino 1.0266 | loss validação 1.1684
+    época 11: loss treino 1.0051 | loss validação 1.1405
+    época 12: loss treino 1.0131 | loss validação 1.1333
+    época 13: loss treino 0.9823 | loss validação 1.1449
+    época 14: loss treino 0.9886 | loss validação 1.1719
+    época 15: loss treino 0.9761 | loss validação 1.1791
+    época 16: loss treino 0.9744 | loss validação 1.1788
+    época 17: loss treino 0.9710 | loss validação 1.1594
+    época 18: loss treino 0.9736 | loss validação 1.1893
+    época 19: loss treino 0.9451 | loss validação 1.1704
+    época 20: loss treino 0.9768 | loss validação 1.1672
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.56): sensibilidade 0.42, especificidade 0.57, precisao 0.33, acuracia 0.51, f1 0.37
+
+=== cnn_1fase_central T5 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0758 | loss validação 1.1430
+    época  2: loss treino 1.0452 | loss validação 1.1477
+    época  3: loss treino 1.0416 | loss validação 1.1545
+    época  4: loss treino 1.0347 | loss validação 1.1455
+    época  5: loss treino 1.0379 | loss validação 1.1351
+    época  6: loss treino 1.0266 | loss validação 1.1781
+    época  7: loss treino 1.0361 | loss validação 1.1705
+    época  8: loss treino 1.0387 | loss validação 1.1777
+    época  9: loss treino 1.0199 | loss validação 1.1345
+    época 10: loss treino 1.0246 | loss validação 1.1573
+    época 11: loss treino 1.0160 | loss validação 1.2231
+    época 12: loss treino 0.9980 | loss validação 1.1708
+    época 13: loss treino 1.0234 | loss validação 1.1944
+    época 14: loss treino 1.0385 | loss validação 1.2720
+    época 15: loss treino 1.0038 | loss validação 1.1649
+    época 16: loss treino 1.0340 | loss validação 1.0928
+    época 17: loss treino 1.0290 | loss validação 1.4141
+    época 18: loss treino 1.0146 | loss validação 1.2821
+    época 19: loss treino 1.0084 | loss validação 1.2407
+    época 20: loss treino 1.0121 | loss validação 1.2002
+    época 21: loss treino 1.0347 | loss validação 1.1692
+    época 22: loss treino 1.0161 | loss validação 1.2929
+    época 23: loss treino 0.9903 | loss validação 1.1635
+    época 24: loss treino 1.0091 | loss validação 1.1411
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+    teste (corte central, limiar 0.52): sensibilidade 0.33, especificidade 0.61, precisao 0.31, acuracia 0.51, f1 0.32
+
+=== cnn_3fases_central T5 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0573 | loss validação 1.1515
+    época  2: loss treino 1.0248 | loss validação 1.1855
+    época  3: loss treino 1.0490 | loss validação 1.2040
+    época  4: loss treino 1.0262 | loss validação 1.1606
+    época  5: loss treino 1.0049 | loss validação 1.1344
+    época  6: loss treino 1.0097 | loss validação 1.1339
+    época  7: loss treino 0.9676 | loss validação 1.1350
+    época  8: loss treino 0.9765 | loss validação 1.2830
+    época  9: loss treino 0.9652 | loss validação 1.2557
+    época 10: loss treino 0.8915 | loss validação 1.3150
+    época 11: loss treino 0.9656 | loss validação 1.2154
+    época 12: loss treino 0.9073 | loss validação 1.2903
+    época 13: loss treino 0.9183 | loss validação 1.2580
+    época 14: loss treino 0.9232 | loss validação 1.3513
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.92, especificidade 0.13, precisao 0.35, acuracia 0.40, f1 0.51
+    teste (corte central, limiar 0.55): sensibilidade 0.58, especificidade 0.35, precisao 0.32, acuracia 0.43, f1 0.41
+
+=== resnet50_1fase_central T5 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0509 | loss validação 1.2031
+    época  2: loss treino 1.0552 | loss validação 1.1847
+    época  3: loss treino 1.0408 | loss validação 1.1638
+    época  4: loss treino 0.9814 | loss validação 1.1738
+    época  5: loss treino 1.0033 | loss validação 1.1966
+    época  6: loss treino 0.9505 | loss validação 1.1986
+    época  7: loss treino 0.9527 | loss validação 1.1922
+    época  8: loss treino 0.9169 | loss validação 1.1985
+    época  9: loss treino 0.9486 | loss validação 1.1899
+    época 10: loss treino 0.9166 | loss validação 1.1874
+    época 11: loss treino 0.9055 | loss validação 1.1833
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.65, precisao 0.43, acuracia 0.60, f1 0.46
+    teste (corte central, limiar 0.51): sensibilidade 0.42, especificidade 0.74, precisao 0.45, acuracia 0.63, f1 0.43
+
+=== resnet50_3fases_central T5 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0524 | loss validação 1.1610
+    época  2: loss treino 1.0500 | loss validação 1.1595
+    época  3: loss treino 1.0457 | loss validação 1.1400
+    época  4: loss treino 0.9763 | loss validação 1.1403
+    época  5: loss treino 1.0148 | loss validação 1.1522
+    época  6: loss treino 0.9591 | loss validação 1.1504
+    época  7: loss treino 0.9623 | loss validação 1.1457
+    época  8: loss treino 0.9618 | loss validação 1.1515
+    época  9: loss treino 0.9474 | loss validação 1.1514
+    época 10: loss treino 0.9274 | loss validação 1.1542
+    época 11: loss treino 0.9329 | loss validação 1.1533
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.52, precisao 0.39, acuracia 0.54, f1 0.47
+    teste (corte central, limiar 0.54): sensibilidade 0.17, especificidade 0.96, precisao 0.67, acuracia 0.69, f1 0.27
+
+=== vgg16_1fase_central T5 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0660 | loss validação 1.1855
+    época  2: loss treino 1.0593 | loss validação 1.1496
+    época  3: loss treino 1.0321 | loss validação 1.1402
+    época  4: loss treino 1.0449 | loss validação 1.1514
+    época  5: loss treino 1.0206 | loss validação 1.1521
+    época  6: loss treino 1.0296 | loss validação 1.1537
+    época  7: loss treino 1.0065 | loss validação 1.1731
+    época  8: loss treino 1.0230 | loss validação 1.1628
+    época  9: loss treino 0.9992 | loss validação 1.1380
+    época 10: loss treino 1.0238 | loss validação 1.1535
+    época 11: loss treino 0.9836 | loss validação 1.1808
+    época 12: loss treino 0.9777 | loss validação 1.1803
+    época 13: loss treino 1.0151 | loss validação 1.1426
+    época 14: loss treino 0.9801 | loss validação 1.1314
+    época 15: loss treino 0.9816 | loss validação 1.1549
+    época 16: loss treino 0.9396 | loss validação 1.1544
+    época 17: loss treino 0.9619 | loss validação 1.1548
+    época 18: loss treino 0.9827 | loss validação 1.1536
+    época 19: loss treino 0.9735 | loss validação 1.1293
+    época 20: loss treino 0.9210 | loss validação 1.1507
+    época 21: loss treino 0.9352 | loss validação 1.1639
+    época 22: loss treino 0.9356 | loss validação 1.1166
+    época 23: loss treino 0.9196 | loss validação 1.1720
+    época 24: loss treino 0.9316 | loss validação 1.1630
+    época 25: loss treino 0.9042 | loss validação 1.1946
+    época 26: loss treino 0.9392 | loss validação 1.1816
+    época 27: loss treino 0.8554 | loss validação 1.1781
+    época 28: loss treino 0.9139 | loss validação 1.1656
+    época 29: loss treino 0.9053 | loss validação 1.1425
+    época 30: loss treino 0.8697 | loss validação 1.1527
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.61): sensibilidade 0.33, especificidade 0.91, precisao 0.67, acuracia 0.71, f1 0.44
+
+=== vgg16_3fases_central T5 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.01, 'dropout': 0.5, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0734 | loss validação 1.1952
+    época  2: loss treino 1.0622 | loss validação 1.1530
+    época  3: loss treino 1.0284 | loss validação 1.1410
+    época  4: loss treino 1.0435 | loss validação 1.1459
+    época  5: loss treino 1.0361 | loss validação 1.1426
+    época  6: loss treino 1.0243 | loss validação 1.1485
+    época  7: loss treino 1.0349 | loss validação 1.1660
+    época  8: loss treino 1.0276 | loss validação 1.1625
+    época  9: loss treino 1.0214 | loss validação 1.1404
+    época 10: loss treino 1.0369 | loss validação 1.1470
+    época 11: loss treino 1.0015 | loss validação 1.1632
+    época 12: loss treino 1.0024 | loss validação 1.1825
+    época 13: loss treino 1.0256 | loss validação 1.1700
+    época 14: loss treino 1.0008 | loss validação 1.1609
+    época 15: loss treino 0.9981 | loss validação 1.1598
+    época 16: loss treino 0.9793 | loss validação 1.1588
+    época 17: loss treino 0.9912 | loss validação 1.1643
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.09, precisao 0.36, acuracia 0.40, f1 0.53
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+
+##### tentativa T5 concluída em 879s acumulados #####
+
+=== cnn_1fase_central T6 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0541 | loss validação 1.1674
+    época  2: loss treino 1.0398 | loss validação 1.1776
+    época  3: loss treino 1.0187 | loss validação 1.1923
+    época  4: loss treino 1.0301 | loss validação 1.2158
+    época  5: loss treino 1.0549 | loss validação 1.2209
+    época  6: loss treino 1.0558 | loss validação 1.2413
+    época  7: loss treino 1.0246 | loss validação 1.2396
+    época  8: loss treino 1.0570 | loss validação 1.2227
+    época  9: loss treino 1.0555 | loss validação 1.1765
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 1.00, precisao 0.00, acuracia 0.66, f1 0.00
+    teste (corte central, limiar 0.49): sensibilidade 0.00, especificidade 0.96, precisao 0.00, acuracia 0.63, f1 0.00
+
+=== cnn_3fases_central T6 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0805 | loss validação 1.1384
+    época  2: loss treino 1.0424 | loss validação 1.1382
+    época  3: loss treino 1.0495 | loss validação 1.1434
+    época  4: loss treino 1.0415 | loss validação 1.1304
+    época  5: loss treino 1.0297 | loss validação 1.1442
+    época  6: loss treino 1.0449 | loss validação 1.1671
+    época  7: loss treino 1.0192 | loss validação 1.1624
+    época  8: loss treino 0.9922 | loss validação 1.1709
+    época  9: loss treino 1.0405 | loss validação 1.1546
+    época 10: loss treino 1.0374 | loss validação 1.1730
+    época 11: loss treino 1.0224 | loss validação 1.1938
+    época 12: loss treino 1.0115 | loss validação 1.1489
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.48, precisao 0.33, acuracia 0.49, f1 0.40
+    teste (corte central, limiar 0.49): sensibilidade 0.50, especificidade 0.30, precisao 0.27, acuracia 0.37, f1 0.35
+
+=== resnet50_1fase_central T6 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0652 | loss validação 1.1994
+    época  2: loss treino 1.0513 | loss validação 1.1897
+    época  3: loss treino 1.0471 | loss validação 1.1565
+    época  4: loss treino 0.9622 | loss validação 1.1542
+    época  5: loss treino 1.0372 | loss validação 1.1650
+    época  6: loss treino 1.0287 | loss validação 1.1747
+    época  7: loss treino 0.9733 | loss validação 1.1734
+    época  8: loss treino 0.9439 | loss validação 1.1828
+    época  9: loss treino 0.9546 | loss validação 1.1811
+    época 10: loss treino 0.9299 | loss validação 1.1894
+    época 11: loss treino 0.9850 | loss validação 1.1763
+    época 12: loss treino 0.9549 | loss validação 1.1513
+    época 13: loss treino 0.9207 | loss validação 1.1592
+    época 14: loss treino 0.9186 | loss validação 1.1780
+    época 15: loss treino 0.9182 | loss validação 1.2008
+    época 16: loss treino 0.8770 | loss validação 1.1947
+    época 17: loss treino 0.8926 | loss validação 1.1886
+    época 18: loss treino 0.9328 | loss validação 1.1611
+    época 19: loss treino 0.9152 | loss validação 1.1522
+    época 20: loss treino 0.8706 | loss validação 1.1664
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.30, precisao 0.33, acuracia 0.43, f1 0.44
+    teste (corte central, limiar 0.47): sensibilidade 0.92, especificidade 0.22, precisao 0.38, acuracia 0.46, f1 0.54
+
+=== resnet50_3fases_central T6 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0558 | loss validação 1.1984
+    época  2: loss treino 1.0585 | loss validação 1.1939
+    época  3: loss treino 1.0751 | loss validação 1.1566
+    época  4: loss treino 0.9937 | loss validação 1.1462
+    época  5: loss treino 1.0088 | loss validação 1.1523
+    época  6: loss treino 1.0128 | loss validação 1.1682
+    época  7: loss treino 1.0012 | loss validação 1.1801
+    época  8: loss treino 0.9724 | loss validação 1.1929
+    época  9: loss treino 0.9779 | loss validação 1.1748
+    época 10: loss treino 0.9431 | loss validação 1.1719
+    época 11: loss treino 0.9718 | loss validação 1.1684
+    época 12: loss treino 0.9600 | loss validação 1.1583
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.48, precisao 0.40, acuracia 0.54, f1 0.50
+    teste (corte central, limiar 0.53): sensibilidade 0.50, especificidade 0.83, precisao 0.60, acuracia 0.71, f1 0.55
+
+=== vgg16_1fase_central T6 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0601 | loss validação 1.2122
+    época  2: loss treino 1.0633 | loss validação 1.2092
+    época  3: loss treino 1.0906 | loss validação 1.1899
+    época  4: loss treino 0.9925 | loss validação 1.1633
+    época  5: loss treino 1.0206 | loss validação 1.1526
+    época  6: loss treino 0.9935 | loss validação 1.1552
+    época  7: loss treino 1.0465 | loss validação 1.1575
+    época  8: loss treino 1.0800 | loss validação 1.1627
+    época  9: loss treino 1.0483 | loss validação 1.1715
+    época 10: loss treino 1.0584 | loss validação 1.1755
+    época 11: loss treino 1.0559 | loss validação 1.1647
+    época 12: loss treino 1.0429 | loss validação 1.1572
+    época 13: loss treino 1.0080 | loss validação 1.1696
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.08, especificidade 0.65, precisao 0.11, acuracia 0.46, f1 0.10
+    teste (corte central, limiar 0.50): sensibilidade 0.17, especificidade 0.61, precisao 0.18, acuracia 0.46, f1 0.17
+
+=== vgg16_3fases_central T6 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 42}
+    época  1: loss treino 1.0589 | loss validação 1.1833
+    época  2: loss treino 1.0624 | loss validação 1.1791
+    época  3: loss treino 1.0703 | loss validação 1.1724
+    época  4: loss treino 0.9844 | loss validação 1.1614
+    época  5: loss treino 1.0032 | loss validação 1.1551
+    época  6: loss treino 1.0146 | loss validação 1.1688
+    época  7: loss treino 1.0518 | loss validação 1.1593
+    época  8: loss treino 1.0930 | loss validação 1.1510
+    época  9: loss treino 1.0603 | loss validação 1.1503
+    época 10: loss treino 1.0573 | loss validação 1.1590
+    época 11: loss treino 1.0466 | loss validação 1.1633
+    época 12: loss treino 1.0431 | loss validação 1.1646
+    época 13: loss treino 1.0210 | loss validação 1.1775
+    época 14: loss treino 1.0230 | loss validação 1.1822
+    época 15: loss treino 1.0358 | loss validação 1.1809
+    época 16: loss treino 1.0238 | loss validação 1.1835
+    época 17: loss treino 1.0272 | loss validação 1.1738
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.75, especificidade 0.52, precisao 0.45, acuracia 0.60, f1 0.56
+    teste (corte central, limiar 0.52): sensibilidade 0.08, especificidade 0.91, precisao 0.33, acuracia 0.63, f1 0.13
+
+=== cnn_1fase_central T6 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0533 | loss validação 1.1685
+    época  2: loss treino 1.0491 | loss validação 1.1600
+    época  3: loss treino 1.0292 | loss validação 1.1550
+    época  4: loss treino 1.0411 | loss validação 1.1834
+    época  5: loss treino 1.0361 | loss validação 1.1918
+    época  6: loss treino 1.0249 | loss validação 1.1890
+    época  7: loss treino 1.0618 | loss validação 1.1964
+    época  8: loss treino 1.0475 | loss validação 1.1884
+    época  9: loss treino 1.0117 | loss validação 1.1415
+    época 10: loss treino 1.0490 | loss validação 1.1289
+    época 11: loss treino 1.0355 | loss validação 1.1709
+    época 12: loss treino 1.0281 | loss validação 1.1853
+    época 13: loss treino 1.0270 | loss validação 1.1825
+    época 14: loss treino 1.0364 | loss validação 1.2223
+    época 15: loss treino 1.0342 | loss validação 1.1906
+    época 16: loss treino 1.0226 | loss validação 1.1523
+    época 17: loss treino 1.0345 | loss validação 1.1349
+    época 18: loss treino 1.0323 | loss validação 1.1866
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.25, especificidade 0.83, precisao 0.43, acuracia 0.63, f1 0.32
+    teste (corte central, limiar 0.47): sensibilidade 0.50, especificidade 0.52, precisao 0.35, acuracia 0.51, f1 0.41
+
+=== cnn_3fases_central T6 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0771 | loss validação 1.1751
+    época  2: loss treino 1.0416 | loss validação 1.2254
+    época  3: loss treino 1.0412 | loss validação 1.2331
+    época  4: loss treino 1.0492 | loss validação 1.2705
+    época  5: loss treino 1.0681 | loss validação 1.2623
+    época  6: loss treino 0.9999 | loss validação 1.2750
+    época  7: loss treino 1.0264 | loss validação 1.2549
+    época  8: loss treino 1.0348 | loss validação 1.2592
+    época  9: loss treino 1.0340 | loss validação 1.2310
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 0.87, precisao 0.00, acuracia 0.57, f1 0.00
+    teste (corte central, limiar 0.50): sensibilidade 0.00, especificidade 0.91, precisao 0.00, acuracia 0.60, f1 0.00
+
+=== resnet50_1fase_central T6 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0487 | loss validação 1.2191
+    época  2: loss treino 1.0364 | loss validação 1.1971
+    época  3: loss treino 1.0706 | loss validação 1.1720
+    época  4: loss treino 1.0246 | loss validação 1.1923
+    época  5: loss treino 0.9818 | loss validação 1.1803
+    época  6: loss treino 0.9905 | loss validação 1.1683
+    época  7: loss treino 0.9696 | loss validação 1.1749
+    época  8: loss treino 0.9794 | loss validação 1.1746
+    época  9: loss treino 1.0044 | loss validação 1.1918
+    época 10: loss treino 0.9321 | loss validação 1.2026
+    época 11: loss treino 0.9201 | loss validação 1.2010
+    época 12: loss treino 0.9344 | loss validação 1.1846
+    época 13: loss treino 0.9407 | loss validação 1.1659
+    época 14: loss treino 0.9552 | loss validação 1.1699
+    época 15: loss treino 0.9695 | loss validação 1.1787
+    época 16: loss treino 0.9103 | loss validação 1.1696
+    época 17: loss treino 0.9746 | loss validação 1.1686
+    época 18: loss treino 0.9160 | loss validação 1.1634
+    época 19: loss treino 0.8684 | loss validação 1.1503
+    época 20: loss treino 0.8858 | loss validação 1.1460
+    época 21: loss treino 0.9060 | loss validação 1.1610
+    época 22: loss treino 0.8054 | loss validação 1.1917
+    época 23: loss treino 0.8856 | loss validação 1.1998
+    época 24: loss treino 0.8550 | loss validação 1.2058
+    época 25: loss treino 0.8233 | loss validação 1.1996
+    época 26: loss treino 0.8408 | loss validação 1.1985
+    época 27: loss treino 0.8544 | loss validação 1.1951
+    época 28: loss treino 0.8037 | loss validação 1.2125
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.58, especificidade 0.57, precisao 0.41, acuracia 0.57, f1 0.48
+    teste (corte central, limiar 0.39): sensibilidade 0.83, especificidade 0.09, precisao 0.32, acuracia 0.34, f1 0.47
+
+=== resnet50_3fases_central T6 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0593 | loss validação 1.2003
+    época  2: loss treino 1.0393 | loss validação 1.1798
+    época  3: loss treino 1.0848 | loss validação 1.1568
+    época  4: loss treino 1.0154 | loss validação 1.1721
+    época  5: loss treino 1.0050 | loss validação 1.1646
+    época  6: loss treino 0.9867 | loss validação 1.1611
+    época  7: loss treino 0.9740 | loss validação 1.1692
+    época  8: loss treino 0.9910 | loss validação 1.1690
+    época  9: loss treino 0.9847 | loss validação 1.1860
+    época 10: loss treino 0.9825 | loss validação 1.1935
+    época 11: loss treino 0.9254 | loss validação 1.1925
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+    teste (corte central, limiar 0.54): sensibilidade 0.08, especificidade 0.96, precisao 0.50, acuracia 0.66, f1 0.14
+
+=== vgg16_1fase_central T6 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0600 | loss validação 1.1784
+    época  2: loss treino 1.0400 | loss validação 1.1687
+    época  3: loss treino 1.0310 | loss validação 1.1850
+    época  4: loss treino 1.0666 | loss validação 1.1675
+    época  5: loss treino 1.0195 | loss validação 1.1649
+    época  6: loss treino 1.0566 | loss validação 1.1636
+    época  7: loss treino 1.0467 | loss validação 1.1539
+    época  8: loss treino 1.0250 | loss validação 1.1589
+    época  9: loss treino 1.0433 | loss validação 1.1598
+    época 10: loss treino 1.0282 | loss validação 1.1687
+    época 11: loss treino 1.0180 | loss validação 1.1495
+    época 12: loss treino 1.0095 | loss validação 1.1411
+    época 13: loss treino 1.0036 | loss validação 1.1462
+    época 14: loss treino 1.0422 | loss validação 1.1644
+    época 15: loss treino 1.0394 | loss validação 1.1624
+    época 16: loss treino 0.9956 | loss validação 1.1724
+    época 17: loss treino 1.0255 | loss validação 1.1744
+    época 18: loss treino 1.0271 | loss validação 1.1805
+    época 19: loss treino 0.9749 | loss validação 1.1631
+    época 20: loss treino 1.0077 | loss validação 1.1481
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.17, precisao 0.39, acuracia 0.46, f1 0.56
+    teste (corte central, limiar 0.54): sensibilidade 0.17, especificidade 0.83, precisao 0.33, acuracia 0.60, f1 0.22
+
+=== vgg16_3fases_central T6 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 43}
+    época  1: loss treino 1.0616 | loss validação 1.1812
+    época  2: loss treino 1.0368 | loss validação 1.1688
+    época  3: loss treino 1.0267 | loss validação 1.1803
+    época  4: loss treino 1.0543 | loss validação 1.1673
+    época  5: loss treino 1.0291 | loss validação 1.1683
+    época  6: loss treino 1.0480 | loss validação 1.1704
+    época  7: loss treino 1.0644 | loss validação 1.1584
+    época  8: loss treino 1.0218 | loss validação 1.1589
+    época  9: loss treino 1.0453 | loss validação 1.1612
+    época 10: loss treino 1.0212 | loss validação 1.1660
+    época 11: loss treino 1.0102 | loss validação 1.1488
+    época 12: loss treino 1.0089 | loss validação 1.1388
+    época 13: loss treino 0.9868 | loss validação 1.1406
+    época 14: loss treino 1.0263 | loss validação 1.1534
+    época 15: loss treino 1.0536 | loss validação 1.1587
+    época 16: loss treino 1.0223 | loss validação 1.1625
+    época 17: loss treino 1.0437 | loss validação 1.1605
+    época 18: loss treino 1.0183 | loss validação 1.1724
+    época 19: loss treino 0.9997 | loss validação 1.1665
+    época 20: loss treino 1.0337 | loss validação 1.1536
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.54): sensibilidade 0.17, especificidade 0.87, precisao 0.40, acuracia 0.63, f1 0.24
+
+=== cnn_1fase_central T6 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0946 | loss validação 1.1432
+    época  2: loss treino 1.0487 | loss validação 1.1582
+    época  3: loss treino 1.0570 | loss validação 1.1791
+    época  4: loss treino 1.0319 | loss validação 1.1785
+    época  5: loss treino 1.0817 | loss validação 1.1617
+    época  6: loss treino 1.0732 | loss validação 1.1961
+    época  7: loss treino 1.0381 | loss validação 1.1878
+    época  8: loss treino 1.0427 | loss validação 1.1774
+    época  9: loss treino 1.0371 | loss validação 1.1818
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.52): sensibilidade 0.83, especificidade 0.22, precisao 0.36, acuracia 0.43, f1 0.50
+
+=== cnn_3fases_central T6 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0591 | loss validação 1.1518
+    época  2: loss treino 1.0328 | loss validação 1.2022
+    época  3: loss treino 1.0576 | loss validação 1.2352
+    época  4: loss treino 1.0605 | loss validação 1.1903
+    época  5: loss treino 1.0225 | loss validação 1.1507
+    época  6: loss treino 0.9961 | loss validação 1.1337
+    época  7: loss treino 1.0004 | loss validação 1.1275
+    época  8: loss treino 1.0440 | loss validação 1.1848
+    época  9: loss treino 1.0105 | loss validação 1.2150
+    época 10: loss treino 1.0067 | loss validação 1.1767
+    época 11: loss treino 1.0384 | loss validação 1.1505
+    época 12: loss treino 1.0044 | loss validação 1.1149
+    época 13: loss treino 1.0260 | loss validação 1.1740
+    época 14: loss treino 0.9731 | loss validação 1.2622
+    época 15: loss treino 0.9568 | loss validação 1.2959
+    época 16: loss treino 1.0059 | loss validação 1.3325
+    época 17: loss treino 0.9768 | loss validação 1.2577
+    época 18: loss treino 0.9909 | loss validação 1.2163
+    época 19: loss treino 0.9950 | loss validação 1.2436
+    época 20: loss treino 0.9790 | loss validação 1.2276
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.65, precisao 0.43, acuracia 0.60, f1 0.46
+    teste (corte central, limiar 0.47): sensibilidade 0.50, especificidade 0.57, precisao 0.38, acuracia 0.54, f1 0.43
+
+=== resnet50_1fase_central T6 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0738 | loss validação 1.2119
+    época  2: loss treino 1.0641 | loss validação 1.1934
+    época  3: loss treino 1.0367 | loss validação 1.1694
+    época  4: loss treino 1.0209 | loss validação 1.1709
+    época  5: loss treino 0.9881 | loss validação 1.1876
+    época  6: loss treino 0.9842 | loss validação 1.1945
+    época  7: loss treino 0.9881 | loss validação 1.1893
+    época  8: loss treino 0.9418 | loss validação 1.1957
+    época  9: loss treino 0.9676 | loss validação 1.1903
+    época 10: loss treino 0.9422 | loss validação 1.1895
+    época 11: loss treino 0.9469 | loss validação 1.1826
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.42, especificidade 0.74, precisao 0.45, acuracia 0.63, f1 0.43
+    teste (corte central, limiar 0.50): sensibilidade 0.42, especificidade 0.74, precisao 0.45, acuracia 0.63, f1 0.43
+
+=== resnet50_3fases_central T6 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0911 | loss validação 1.1617
+    época  2: loss treino 1.0552 | loss validação 1.1601
+    época  3: loss treino 1.0567 | loss validação 1.1447
+    época  4: loss treino 1.0090 | loss validação 1.1402
+    época  5: loss treino 1.0240 | loss validação 1.1475
+    época  6: loss treino 0.9689 | loss validação 1.1511
+    época  7: loss treino 0.9861 | loss validação 1.1512
+    época  8: loss treino 1.0051 | loss validação 1.1572
+    época  9: loss treino 0.9790 | loss validação 1.1592
+    época 10: loss treino 0.9548 | loss validação 1.1639
+    época 11: loss treino 0.9935 | loss validação 1.1603
+    época 12: loss treino 0.9433 | loss validação 1.1551
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.43, precisao 0.38, acuracia 0.51, f1 0.48
+    teste (corte central, limiar 0.49): sensibilidade 0.75, especificidade 0.35, precisao 0.38, acuracia 0.49, f1 0.50
+
+=== vgg16_1fase_central T6 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0713 | loss validação 1.1734
+    época  2: loss treino 1.0572 | loss validação 1.1573
+    época  3: loss treino 1.0407 | loss validação 1.1543
+    época  4: loss treino 1.0350 | loss validação 1.1606
+    época  5: loss treino 1.0120 | loss validação 1.1554
+    época  6: loss treino 1.0463 | loss validação 1.1592
+    época  7: loss treino 1.0248 | loss validação 1.1753
+    época  8: loss treino 1.0333 | loss validação 1.1740
+    época  9: loss treino 1.0363 | loss validação 1.1512
+    época 10: loss treino 1.0441 | loss validação 1.1504
+    época 11: loss treino 1.0203 | loss validação 1.1479
+    época 12: loss treino 1.0661 | loss validação 1.1489
+    época 13: loss treino 1.0577 | loss validação 1.1425
+    época 14: loss treino 1.0003 | loss validação 1.1425
+    época 15: loss treino 1.0234 | loss validação 1.1512
+    época 16: loss treino 1.0071 | loss validação 1.1461
+    época 17: loss treino 0.9943 | loss validação 1.1574
+    época 18: loss treino 1.0438 | loss validação 1.1569
+    época 19: loss treino 1.0055 | loss validação 1.1427
+    época 20: loss treino 1.0043 | loss validação 1.1597
+    época 21: loss treino 1.0169 | loss validação 1.1556
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.92, especificidade 0.17, precisao 0.37, acuracia 0.43, f1 0.52
+    teste (corte central, limiar 0.51): sensibilidade 0.50, especificidade 0.48, precisao 0.33, acuracia 0.49, f1 0.40
+
+=== vgg16_3fases_central T6 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.7, 'tamanho_lote': 16, 'semente': 44}
+    época  1: loss treino 1.0761 | loss validação 1.1913
+    época  2: loss treino 1.0584 | loss validação 1.1618
+    época  3: loss treino 1.0373 | loss validação 1.1508
+    época  4: loss treino 1.0482 | loss validação 1.1575
+    época  5: loss treino 1.0297 | loss validação 1.1575
+    época  6: loss treino 1.0183 | loss validação 1.1595
+    época  7: loss treino 1.0379 | loss validação 1.1713
+    época  8: loss treino 1.0596 | loss validação 1.1711
+    época  9: loss treino 1.0432 | loss validação 1.1468
+    época 10: loss treino 1.0521 | loss validação 1.1383
+    época 11: loss treino 1.0398 | loss validação 1.1335
+    época 12: loss treino 1.0433 | loss validação 1.1383
+    época 13: loss treino 1.0533 | loss validação 1.1550
+    época 14: loss treino 0.9920 | loss validação 1.1719
+    época 15: loss treino 1.0318 | loss validação 1.1735
+    época 16: loss treino 1.0041 | loss validação 1.1596
+    época 17: loss treino 1.0333 | loss validação 1.1572
+    época 18: loss treino 1.0205 | loss validação 1.1620
+    época 19: loss treino 1.0248 | loss validação 1.1599
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.54): sensibilidade 0.50, especificidade 0.57, precisao 0.38, acuracia 0.54, f1 0.43
+
+##### tentativa T6 concluída em 1585s acumulados #####
+
+=== cnn_1fase_central T7 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 42}
+    época  1: loss treino 1.0776 | loss validação 1.1683
+    época  2: loss treino 1.0479 | loss validação 1.1624
+    época  3: loss treino 1.0326 | loss validação 1.1591
+    época  4: loss treino 1.0046 | loss validação 1.1570
+    época  5: loss treino 1.0241 | loss validação 1.1596
+    época  6: loss treino 1.0227 | loss validação 1.1669
+    época  7: loss treino 1.0233 | loss validação 1.1705
+    época  8: loss treino 1.0140 | loss validação 1.1899
+    época  9: loss treino 1.0511 | loss validação 1.1881
+    época 10: loss treino 1.0262 | loss validação 1.2021
+    época 11: loss treino 1.0367 | loss validação 1.1965
+    época 12: loss treino 1.0158 | loss validação 1.1837
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.08, especificidade 1.00, precisao 1.00, acuracia 0.69, f1 0.15
+    teste (corte central, limiar 0.48): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+
+=== cnn_3fases_central T7 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 42}
+    época  1: loss treino 1.0937 | loss validação 1.1488
+    época  2: loss treino 1.0267 | loss validação 1.1475
+    época  3: loss treino 1.0464 | loss validação 1.1494
+    época  4: loss treino 1.0342 | loss validação 1.1560
+    época  5: loss treino 1.0296 | loss validação 1.1616
+    época  6: loss treino 1.0232 | loss validação 1.1614
+    época  7: loss treino 1.0302 | loss validação 1.1596
+    época  8: loss treino 1.0257 | loss validação 1.1642
+    época  9: loss treino 1.0040 | loss validação 1.1743
+    época 10: loss treino 0.9976 | loss validação 1.1880
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.51): sensibilidade 0.75, especificidade 0.26, precisao 0.35, acuracia 0.43, f1 0.47
+
+=== resnet50_1fase_central T7 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 42}
+    época  1: loss treino 1.0480 | loss validação 1.1774
+    época  2: loss treino 1.0426 | loss validação 1.1864
+    época  3: loss treino 1.0394 | loss validação 1.1787
+    época  4: loss treino 1.0112 | loss validação 1.1830
+    época  5: loss treino 1.0357 | loss validação 1.1845
+    época  6: loss treino 1.0009 | loss validação 1.1734
+    época  7: loss treino 0.9730 | loss validação 1.1618
+    época  8: loss treino 0.9978 | loss validação 1.1599
+    época  9: loss treino 0.9663 | loss validação 1.1571
+    época 10: loss treino 0.9606 | loss validação 1.1637
+    época 11: loss treino 0.9650 | loss validação 1.1616
+    época 12: loss treino 0.9474 | loss validação 1.1595
+    época 13: loss treino 0.9190 | loss validação 1.1723
+    época 14: loss treino 0.9074 | loss validação 1.1959
+    época 15: loss treino 0.9198 | loss validação 1.2224
+    época 16: loss treino 0.9138 | loss validação 1.2263
+    época 17: loss treino 0.9268 | loss validação 1.2150
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.50, especificidade 0.39, precisao 0.30, acuracia 0.43, f1 0.37
+    teste (corte central, limiar 0.46): sensibilidade 0.92, especificidade 0.17, precisao 0.37, acuracia 0.43, f1 0.52
+
+=== resnet50_3fases_central T7 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 42}
+    época  1: loss treino 1.0346 | loss validação 1.1821
+    época  2: loss treino 1.0447 | loss validação 1.1826
+    época  3: loss treino 1.0362 | loss validação 1.1715
+    época  4: loss treino 1.0222 | loss validação 1.1727
+    época  5: loss treino 1.0196 | loss validação 1.1754
+    época  6: loss treino 0.9798 | loss validação 1.1733
+    época  7: loss treino 0.9937 | loss validação 1.1697
+    época  8: loss treino 0.9964 | loss validação 1.1677
+    época  9: loss treino 0.9795 | loss validação 1.1552
+    época 10: loss treino 0.9746 | loss validação 1.1547
+    época 11: loss treino 0.9962 | loss validação 1.1537
+    época 12: loss treino 0.9505 | loss validação 1.1551
+    época 13: loss treino 0.9253 | loss validação 1.1663
+    época 14: loss treino 0.9394 | loss validação 1.1811
+    época 15: loss treino 0.9188 | loss validação 1.2044
+    época 16: loss treino 0.9056 | loss validação 1.2153
+    época 17: loss treino 0.9364 | loss validação 1.2135
+    época 18: loss treino 0.9451 | loss validação 1.1862
+    época 19: loss treino 0.9274 | loss validação 1.1685
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.48, precisao 0.40, acuracia 0.54, f1 0.50
+    teste (corte central, limiar 0.51): sensibilidade 0.67, especificidade 0.48, precisao 0.40, acuracia 0.54, f1 0.50
+
+=== vgg16_1fase_central T7 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 42}
+    época  1: loss treino 1.0508 | loss validação 1.1715
+    época  2: loss treino 1.0475 | loss validação 1.1705
+    época  3: loss treino 1.0573 | loss validação 1.1597
+    época  4: loss treino 1.0409 | loss validação 1.1439
+    época  5: loss treino 1.0373 | loss validação 1.1480
+    época  6: loss treino 1.0396 | loss validação 1.1649
+    época  7: loss treino 1.0170 | loss validação 1.1583
+    época  8: loss treino 1.0414 | loss validação 1.1619
+    época  9: loss treino 1.0147 | loss validação 1.1688
+    época 10: loss treino 1.0232 | loss validação 1.1578
+    época 11: loss treino 1.0185 | loss validação 1.1451
+    época 12: loss treino 1.0034 | loss validação 1.1458
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.83, especificidade 0.17, precisao 0.34, acuracia 0.40, f1 0.49
+    teste (corte central, limiar 0.51): sensibilidade 0.58, especificidade 0.52, precisao 0.39, acuracia 0.54, f1 0.47
+
+=== vgg16_3fases_central T7 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 42}
+    época  1: loss treino 1.0531 | loss validação 1.1728
+    época  2: loss treino 1.0483 | loss validação 1.1766
+    época  3: loss treino 1.0562 | loss validação 1.1672
+    época  4: loss treino 1.0364 | loss validação 1.1549
+    época  5: loss treino 1.0433 | loss validação 1.1551
+    época  6: loss treino 1.0394 | loss validação 1.1660
+    época  7: loss treino 1.0303 | loss validação 1.1596
+    época  8: loss treino 1.0448 | loss validação 1.1617
+    época  9: loss treino 1.0338 | loss validação 1.1722
+    época 10: loss treino 1.0247 | loss validação 1.1687
+    época 11: loss treino 1.0185 | loss validação 1.1575
+    época 12: loss treino 1.0237 | loss validação 1.1533
+    época 13: loss treino 1.0175 | loss validação 1.1578
+    época 14: loss treino 1.0061 | loss validação 1.1622
+    época 15: loss treino 1.0165 | loss validação 1.1528
+    época 16: loss treino 0.9856 | loss validação 1.1457
+    época 17: loss treino 1.0074 | loss validação 1.1408
+    época 18: loss treino 1.0246 | loss validação 1.1469
+    época 19: loss treino 0.9947 | loss validação 1.1609
+    época 20: loss treino 0.9787 | loss validação 1.1542
+    época 21: loss treino 1.0078 | loss validação 1.1536
+    época 22: loss treino 0.9653 | loss validação 1.1544
+    época 23: loss treino 0.9422 | loss validação 1.1714
+    época 24: loss treino 0.9512 | loss validação 1.1748
+    época 25: loss treino 0.9863 | loss validação 1.1604
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.92, especificidade 0.26, precisao 0.39, acuracia 0.49, f1 0.55
+    teste (corte central, limiar 0.53): sensibilidade 0.67, especificidade 0.70, precisao 0.53, acuracia 0.69, f1 0.59
+
+=== cnn_1fase_central T7 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 43}
+    época  1: loss treino 1.0658 | loss validação 1.1714
+    época  2: loss treino 1.0396 | loss validação 1.1658
+    época  3: loss treino 1.0283 | loss validação 1.1509
+    época  4: loss treino 1.0321 | loss validação 1.1453
+    época  5: loss treino 1.0420 | loss validação 1.1446
+    época  6: loss treino 1.0573 | loss validação 1.1630
+    época  7: loss treino 1.0321 | loss validação 1.1835
+    época  8: loss treino 1.0249 | loss validação 1.1927
+    época  9: loss treino 1.0449 | loss validação 1.1914
+    época 10: loss treino 1.0438 | loss validação 1.1811
+    época 11: loss treino 1.0242 | loss validação 1.1727
+    época 12: loss treino 1.0282 | loss validação 1.1581
+    época 13: loss treino 1.0237 | loss validação 1.1715
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.53): sensibilidade 0.00, especificidade 0.91, precisao 0.00, acuracia 0.60, f1 0.00
+
+=== cnn_3fases_central T7 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 43}
+    época  1: loss treino 1.0675 | loss validação 1.1521
+    época  2: loss treino 1.0485 | loss validação 1.1676
+    época  3: loss treino 1.0226 | loss validação 1.2070
+    época  4: loss treino 1.0123 | loss validação 1.2575
+    época  5: loss treino 1.0290 | loss validação 1.2909
+    época  6: loss treino 1.0156 | loss validação 1.2927
+    época  7: loss treino 1.0225 | loss validação 1.2919
+    época  8: loss treino 1.0227 | loss validação 1.2968
+    época  9: loss treino 1.0136 | loss validação 1.2789
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.51): sensibilidade 0.08, especificidade 0.96, precisao 0.50, acuracia 0.66, f1 0.14
+
+=== resnet50_1fase_central T7 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 43}
+    época  1: loss treino 1.0408 | loss validação 1.2064
+    época  2: loss treino 1.0400 | loss validação 1.1768
+    época  3: loss treino 1.0321 | loss validação 1.1558
+    época  4: loss treino 1.0213 | loss validação 1.1646
+    época  5: loss treino 0.9951 | loss validação 1.1562
+    época  6: loss treino 0.9695 | loss validação 1.1504
+    época  7: loss treino 0.9677 | loss validação 1.1595
+    época  8: loss treino 0.9686 | loss validação 1.1717
+    época  9: loss treino 0.9871 | loss validação 1.1954
+    época 10: loss treino 0.9555 | loss validação 1.2208
+    época 11: loss treino 0.9446 | loss validação 1.2319
+    época 12: loss treino 0.9349 | loss validação 1.2184
+    época 13: loss treino 0.9346 | loss validação 1.1958
+    época 14: loss treino 0.9595 | loss validação 1.1853
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.35, precisao 0.35, acuracia 0.46, f1 0.46
+    teste (corte central, limiar 0.51): sensibilidade 0.58, especificidade 0.48, precisao 0.37, acuracia 0.51, f1 0.45
+
+=== resnet50_3fases_central T7 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 43}
+    época  1: loss treino 1.0337 | loss validação 1.1882
+    época  2: loss treino 1.0424 | loss validação 1.1614
+    época  3: loss treino 1.0351 | loss validação 1.1434
+    época  4: loss treino 1.0086 | loss validação 1.1505
+    época  5: loss treino 1.0141 | loss validação 1.1455
+    época  6: loss treino 0.9748 | loss validação 1.1431
+    época  7: loss treino 0.9840 | loss validação 1.1511
+    época  8: loss treino 0.9777 | loss validação 1.1608
+    época  9: loss treino 0.9884 | loss validação 1.1819
+    época 10: loss treino 0.9763 | loss validação 1.2052
+    época 11: loss treino 0.9362 | loss validação 1.2172
+    época 12: loss treino 0.9689 | loss validação 1.2115
+    época 13: loss treino 0.9492 | loss validação 1.1980
+    época 14: loss treino 0.9244 | loss validação 1.1959
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+    teste (corte central, limiar 0.54): sensibilidade 0.50, especificidade 0.57, precisao 0.38, acuracia 0.54, f1 0.43
+
+=== vgg16_1fase_central T7 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 43}
+    época  1: loss treino 1.0452 | loss validação 1.1605
+    época  2: loss treino 1.0431 | loss validação 1.1599
+    época  3: loss treino 1.0302 | loss validação 1.1662
+    época  4: loss treino 1.0262 | loss validação 1.1597
+    época  5: loss treino 1.0454 | loss validação 1.1490
+    época  6: loss treino 1.0416 | loss validação 1.1425
+    época  7: loss treino 1.0160 | loss validação 1.1426
+    época  8: loss treino 1.0291 | loss validação 1.1548
+    época  9: loss treino 1.0148 | loss validação 1.1598
+    época 10: loss treino 1.0192 | loss validação 1.1612
+    época 11: loss treino 1.0147 | loss validação 1.1451
+    época 12: loss treino 1.0225 | loss validação 1.1322
+    época 13: loss treino 0.9938 | loss validação 1.1293
+    época 14: loss treino 0.9738 | loss validação 1.1352
+    época 15: loss treino 1.0119 | loss validação 1.1438
+    época 16: loss treino 0.9941 | loss validação 1.1588
+    época 17: loss treino 1.0063 | loss validação 1.1682
+    época 18: loss treino 1.0046 | loss validação 1.1982
+    época 19: loss treino 0.9806 | loss validação 1.1962
+    época 20: loss treino 0.9779 | loss validação 1.1711
+    época 21: loss treino 0.9736 | loss validação 1.1476
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.09, precisao 0.36, acuracia 0.40, f1 0.53
+    teste (corte central, limiar 0.51): sensibilidade 1.00, especificidade 0.17, precisao 0.39, acuracia 0.46, f1 0.56
+
+=== vgg16_3fases_central T7 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 43}
+    época  1: loss treino 1.0414 | loss validação 1.1639
+    época  2: loss treino 1.0291 | loss validação 1.1538
+    época  3: loss treino 1.0319 | loss validação 1.1560
+    época  4: loss treino 1.0117 | loss validação 1.1585
+    época  5: loss treino 1.0436 | loss validação 1.1550
+    época  6: loss treino 1.0358 | loss validação 1.1529
+    época  7: loss treino 1.0380 | loss validação 1.1526
+    época  8: loss treino 1.0255 | loss validação 1.1635
+    época  9: loss treino 1.0124 | loss validação 1.1694
+    época 10: loss treino 1.0264 | loss validação 1.1735
+    época 11: loss treino 1.0446 | loss validação 1.1554
+    época 12: loss treino 1.0212 | loss validação 1.1377
+    época 13: loss treino 0.9964 | loss validação 1.1305
+    época 14: loss treino 0.9920 | loss validação 1.1318
+    época 15: loss treino 1.0199 | loss validação 1.1377
+    época 16: loss treino 0.9978 | loss validação 1.1499
+    época 17: loss treino 1.0031 | loss validação 1.1596
+    época 18: loss treino 0.9872 | loss validação 1.1841
+    época 19: loss treino 0.9653 | loss validação 1.1847
+    época 20: loss treino 0.9910 | loss validação 1.1621
+    época 21: loss treino 0.9873 | loss validação 1.1452
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.09, precisao 0.36, acuracia 0.40, f1 0.53
+    teste (corte central, limiar 0.56): sensibilidade 0.17, especificidade 0.78, precisao 0.29, acuracia 0.57, f1 0.21
+
+=== cnn_1fase_central T7 | 105,953 parâmetros treináveis de 105,953 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 44}
+    época  1: loss treino 1.0589 | loss validação 1.1375
+    época  2: loss treino 1.0489 | loss validação 1.1395
+    época  3: loss treino 1.0319 | loss validação 1.1408
+    época  4: loss treino 1.0323 | loss validação 1.1381
+    época  5: loss treino 1.0327 | loss validação 1.1415
+    época  6: loss treino 1.0344 | loss validação 1.1727
+    época  7: loss treino 1.0347 | loss validação 1.2114
+    época  8: loss treino 1.0208 | loss validação 1.2422
+    época  9: loss treino 1.0348 | loss validação 1.2615
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.00, precisao 0.34, acuracia 0.34, f1 0.51
+    teste (corte central, limiar 0.53): sensibilidade 0.92, especificidade 0.04, precisao 0.33, acuracia 0.34, f1 0.49
+
+=== cnn_3fases_central T7 | 106,241 parâmetros treináveis de 106,241 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 44}
+    época  1: loss treino 1.0596 | loss validação 1.1588
+    época  2: loss treino 1.0165 | loss validação 1.1730
+    época  3: loss treino 1.0357 | loss validação 1.1945
+    época  4: loss treino 1.0278 | loss validação 1.1659
+    época  5: loss treino 1.0118 | loss validação 1.1351
+    época  6: loss treino 0.9867 | loss validação 1.1038
+    época  7: loss treino 1.0000 | loss validação 1.0829
+    época  8: loss treino 0.9856 | loss validação 1.1164
+    época  9: loss treino 1.0264 | loss validação 1.1822
+    época 10: loss treino 0.9376 | loss validação 1.1881
+    época 11: loss treino 0.9360 | loss validação 1.2790
+    época 12: loss treino 0.9490 | loss validação 1.3055
+    época 13: loss treino 0.9405 | loss validação 1.3119
+    época 14: loss treino 0.9460 | loss validação 1.3116
+    época 15: loss treino 0.9398 | loss validação 1.4118
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.67, especificidade 0.30, precisao 0.33, acuracia 0.43, f1 0.44
+    teste (corte central, limiar 0.56): sensibilidade 0.33, especificidade 0.48, precisao 0.25, acuracia 0.43, f1 0.29
+
+=== resnet50_1fase_central T7 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 44}
+    época  1: loss treino 1.0492 | loss validação 1.1959
+    época  2: loss treino 1.0608 | loss validação 1.1876
+    época  3: loss treino 1.0372 | loss validação 1.1733
+    época  4: loss treino 0.9941 | loss validação 1.1843
+    época  5: loss treino 0.9888 | loss validação 1.1943
+    época  6: loss treino 0.9668 | loss validação 1.1950
+    época  7: loss treino 0.9881 | loss validação 1.2020
+    época  8: loss treino 0.9465 | loss validação 1.2143
+    época  9: loss treino 0.9650 | loss validação 1.2157
+    época 10: loss treino 0.9526 | loss validação 1.2156
+    época 11: loss treino 0.9273 | loss validação 1.2052
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.42, especificidade 0.74, precisao 0.45, acuracia 0.63, f1 0.43
+    teste (corte central, limiar 0.51): sensibilidade 0.33, especificidade 0.78, precisao 0.44, acuracia 0.63, f1 0.38
+
+=== resnet50_3fases_central T7 | 2,049 parâmetros treináveis de 23,510,081 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 44}
+    época  1: loss treino 1.0444 | loss validação 1.1584
+    época  2: loss treino 1.0501 | loss validação 1.1633
+    época  3: loss treino 1.0314 | loss validação 1.1540
+    época  4: loss treino 0.9767 | loss validação 1.1594
+    época  5: loss treino 1.0077 | loss validação 1.1609
+    época  6: loss treino 0.9897 | loss validação 1.1548
+    época  7: loss treino 0.9837 | loss validação 1.1554
+    época  8: loss treino 0.9819 | loss validação 1.1625
+    época  9: loss treino 0.9669 | loss validação 1.1657
+    época 10: loss treino 0.9637 | loss validação 1.1680
+    época 11: loss treino 0.9442 | loss validação 1.1631
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 0.33, especificidade 0.78, precisao 0.44, acuracia 0.63, f1 0.38
+    teste (corte central, limiar 0.51): sensibilidade 0.33, especificidade 0.87, precisao 0.57, acuracia 0.69, f1 0.42
+
+=== vgg16_1fase_central T7 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 44}
+    época  1: loss treino 1.0531 | loss validação 1.1726
+    época  2: loss treino 1.0517 | loss validação 1.1637
+    época  3: loss treino 1.0164 | loss validação 1.1463
+    época  4: loss treino 1.0333 | loss validação 1.1438
+    época  5: loss treino 1.0194 | loss validação 1.1429
+    época  6: loss treino 1.0405 | loss validação 1.1447
+    época  7: loss treino 0.9998 | loss validação 1.1599
+    época  8: loss treino 1.0280 | loss validação 1.1740
+    época  9: loss treino 0.9802 | loss validação 1.1607
+    época 10: loss treino 0.9966 | loss validação 1.1646
+    época 11: loss treino 0.9656 | loss validação 1.1745
+    época 12: loss treino 0.9756 | loss validação 1.1930
+    época 13: loss treino 1.0080 | loss validação 1.1749
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.17, precisao 0.39, acuracia 0.46, f1 0.56
+    teste (corte central, limiar 0.49): sensibilidade 1.00, especificidade 0.13, precisao 0.38, acuracia 0.43, f1 0.55
+
+=== vgg16_3fases_central T7 | 32,897 parâmetros treináveis de 14,747,585 | mps ===
+    hiperparâmetros: {'taxa_aprendizado': 0.001, 'decaimento_pesos': 0.0001, 'dropout': 0.5, 'tamanho_lote': 32, 'semente': 44}
+    época  1: loss treino 1.0531 | loss validação 1.1693
+    época  2: loss treino 1.0533 | loss validação 1.1539
+    época  3: loss treino 1.0128 | loss validação 1.1385
+    época  4: loss treino 1.0411 | loss validação 1.1364
+    época  5: loss treino 1.0400 | loss validação 1.1382
+    época  6: loss treino 1.0241 | loss validação 1.1394
+    época  7: loss treino 0.9921 | loss validação 1.1531
+    época  8: loss treino 1.0356 | loss validação 1.1642
+    época  9: loss treino 1.0027 | loss validação 1.1561
+    época 10: loss treino 1.0165 | loss validação 1.1566
+    época 11: loss treino 0.9969 | loss validação 1.1606
+    época 12: loss treino 0.9870 | loss validação 1.1635
+    early stopping: 8 épocas sem melhorar
+    teste (corte central, limiar 0.50): sensibilidade 1.00, especificidade 0.04, precisao 0.35, acuracia 0.37, f1 0.52
+    teste (corte central, limiar 0.51): sensibilidade 0.75, especificidade 0.26, precisao 0.35, acuracia 0.43, f1 0.47
+
+##### tentativa T7 concluída em 2204s acumulados #####
+FIM DA ETAPA 2

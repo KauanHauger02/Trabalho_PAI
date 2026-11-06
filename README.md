@@ -46,11 +46,25 @@ Na interface:
 | `trabalho_pai.py` | Código completo, dividido em 9 etapas |
 | `ENTENDIMENTO.md` | Explicação de cada função e de cada escolha, para estudo do grupo |
 | `relatorio/` | Relatório em LaTeX no padrão da SBC e o PDF |
-| `resultados/metricas.csv` | Métricas do treino final no conjunto de teste |
-| `resultados/ajuste.csv` e `ajuste_resumo.csv` | Todas as tentativas do ajuste de hiperparâmetros |
-| `resultados/loss_*.png`, `gradcam_*.png` | Curvas de convergência e exemplos de Grad-CAM |
+| `resultados/metricas.csv` | Métricas do treino final no conjunto de teste, com o limiar 0,5 e com o limiar da validação |
+| `resultados/ajuste.csv` e `ajuste_resumo.csv` | Todas as tentativas do ajuste de hiperparâmetros (126 treinos) |
+| `resultados/ajuste_convergencia.png` | Curvas de loss das 7 tentativas do ajuste |
+| `resultados/convergencia_*.png`, `loss_*.png` | Curvas de convergência do treino final, em grade e por modelo |
+| `resultados/gradcam_*.png` | Exemplos de Grad-CAM: um acerto e um erro de cada tipo (VP, VN, FP, FN) por modelo |
+| `resultados/log_*.txt` | Saída completa do ajuste e do treino final |
 | `resultados/rodada1/` | Resultados da primeira rodada, de 30/10, antes do ajuste |
 | `declaracao_uso_iag.md` | Declaração de uso de IA generativa |
+
+## Resultado em uma frase
+
+Os 12 modelos ficaram perto do acaso (AUC de teste entre 0,33 e 0,67). O melhor foi a ResNet50 com
+3 fases no corte central (acurácia 0,71). Os detalhes e a discussão estão no relatório e no `ENTENDIMENTO.md`.
+
+## O que não está no repositório
+
+- `Base de dados/`: o dataset.
+- `pesos/`: os 12 modelos treinados (614 MB). Para recriar: `python trabalho_pai.py --treinar`, cerca de
+  12 minutos em um Mac M4 Pro. Sem essa pasta, o botão "Classificar + Grad-CAM" avisa que falta treinar.
 
 ## Problema conhecido
 
