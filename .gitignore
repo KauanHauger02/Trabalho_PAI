@@ -1,6 +1,17 @@
+# Dataset (1,3 GB): baixar do Zenodo e descompactar em "Base de dados/"
 Base de dados/
+
 # Ambiente virtual, pesos treinados e cache do Python
 .venv/
 pesos/
 __pycache__/
 *.pyc
+
+# Sistema e LaTeX
+.DS_Store
+relatorio/*.aux
+relatorio/*.bbl
+relatorio/*.blg
+relatorio/*.log
+relatorio/*.out
+relatorio/*.synctex.gz
